@@ -1,347 +1,6 @@
 local SL = lord.require_intllib()
 
--- Ores:
-
-minetest.register_node("lottores:limestone_ore", {
-	description = SL("Limestone Ore"),
-	tiles = {"default_stone.png^lottores_limestone_ore.png"},
-	is_ground_content = true,
-	groups = {cracky=3},
-	drop = 'lottores:limestone_lump',
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("lottores:rough_rock", {
-	description = SL("Rough Rock"),
-	tiles = {"default_stone.png^lottores_rough_rock.png"},
-	is_ground_content = true,
-	groups = {cracky=2},
-	drop = 'lottores:rough_rock_lump',
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("lottores:silver_ore", {
-	description = SL("Silver Ore"),
-	tiles = {"default_stone.png^lottores_silver_ore.png"},
-	is_ground_content = true,
-	groups = {cracky=2},
-	drop = 'lottores:silver_lump',
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("lottores:tin_ore", {
-	description = SL("Tin Ore"),
-	tiles = {"default_stone.png^lottores_tin_ore.png"},
-	is_ground_content = true,
-	groups = {cracky=3},
-	drop = "lottores:tin_lump",
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("lottores:lead_ore", {
-	description = SL("Lead Ore"),
-	tiles = {"default_stone.png^lottores_lead_ore.png"},
-	is_ground_content = true,
-	groups = {cracky=2},
-	drop = "lottores:lead_lump",
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("lottores:mithril_ore", {
-	description = SL("Mithril Ore"),
-	tiles = {"default_stone.png^lottores_mithril_ore.png"},
-	is_ground_content = true,
-	groups = {cracky=1},
-	drop = "lottores:mithril_lump",
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("lottores:blue_gem_ore", {
-	description = SL("Blue Gem Ore"),
-	tiles = {"default_stone.png^lottores_bluegem_ore.png"},
-	is_ground_content = true,
-	groups = {cracky=1},
-	drop = {
-		items = {
-			{
-				items = {'lottores:blue_gem'},
-				rarity = 5,
-			},
-			{
-				items = {''},
-			}
-		}
-	},
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("lottores:white_gem_ore", {
-	description = SL("White Gem Ore"),
-	tiles = {"default_stone.png^lottores_whitegem_ore.png"},
-	is_ground_content = true,
-	groups = {cracky=1},
-	drop = {
-		items = {
-			{
-				items = {'lottores:white_gem'},
-				rarity = 5,
-			},
-			{
-				items = {''},
-			}
-		}
-	},
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("lottores:red_gem_ore", {
-	description = SL("Red Gem Ore"),
-	tiles = {"default_stone.png^lottores_redgem_ore.png"},
-	is_ground_content = true,
-	groups = {cracky=1},
-	drop = {
-		items = {
-			{
-				items = {'lottores:red_gem'},
-				rarity = 5,
-			},
-			{
-				items = {''},
-			}
-		}
-	},
-	sounds = default.node_sound_stone_defaults(),
-})
-
--- Ores Spawning
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:limestone_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 9*9*9,
-	clust_num_ores = 5,
-	clust_size     = 2,
-	y_min     = -60,
-	y_max     = -10,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:limestone_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 7*7*7,
-	clust_num_ores = 5,
-	clust_size     = 2,
-	y_min     = -31000,
-	y_max     = -61,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:limestone_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 24*24*24,
-	clust_num_ores = 15,
-	clust_size     = 6,
-	y_min     = -31000,
-	y_max     = -50,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:silver_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 15*15*15,
-	clust_num_ores = 3,
-	clust_size     = 2,
-	y_min     = -200,
-	y_max     = -50,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:silver_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 13*13*13,
-	clust_num_ores = 6,
-	clust_size     = 3,
-	y_min     = -31000,
-	y_max     = -201,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:tin_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 12*12*12,
-	clust_num_ores = 5,
-	clust_size     = 2,
-	y_min     = -60,
-	y_max     = -20,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:tin_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 9*9*9,
-	clust_num_ores = 10,
-	clust_size     = 5,
-	y_min     = -31000,
-	y_max     = -61,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:lead_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 12*12*12,
-	clust_num_ores = 4,
-	clust_size     = 3,
-	y_min     = -60,
-	y_max     = -30,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:lead_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 9*9*9,
-	clust_num_ores = 5,
-	clust_size     = 3,
-	y_min     = -31000,
-	y_max     = -61,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:rough_rock",
-	wherein        = "default:stone",
-	clust_scarcity = 15*15*15,
-	clust_num_ores = 3,
-	clust_size     = 2,
-	y_min     = -300,
-	y_max     = -70,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:rough_rock",
-	wherein        = "default:stone",
-	clust_scarcity = 13*13*13,
-	clust_num_ores = 3,
-	clust_size     = 2,
-	y_min     = -31000,
-	y_max     = -301,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:blue_gem_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 14*14*14,
-	clust_num_ores = 4,
-	clust_size     = 2,
-	y_min     = -31000,
-	y_max     = -256,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:red_gem_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 14*14*14,
-	clust_num_ores = 4,
-	clust_size     = 2,
-	y_min     = -31000,
-	y_max     = -256,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:white_gem_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 14*14*14,
-	clust_num_ores = 4,
-	clust_size     = 2,
-	y_min     = -31000,
-	y_max     = -256,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:mithril_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 18*18*18,
-	clust_num_ores = 4,
-	clust_size     = 3,
-	y_min     = -255,
-	y_max     = -128,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "lottores:mithril_ore",
-	wherein        = "default:stone",
-	clust_scarcity = 16*16*16,
-	clust_num_ores = 4,
-	clust_size     = 3,
-	y_min     = -31000,
-	y_max     = -256,
-})
-
 -- Craft Items
-
-minetest.register_craftitem("lottores:limestone_lump", {
-	description = SL("Limestone Lump"),
-	inventory_image = "lottores_limestone_lump.png",
-})
-
-minetest.register_craftitem("lottores:rough_rock_lump", {
-	description = SL("Rough Rock Lump"),
-	inventory_image = "lottores_rough_rock_lump.png",
-})
-
-minetest.register_craftitem("lottores:silver_lump", {
-	description = SL("Silver Lump"),
-	inventory_image = "lottores_silver_lump.png",
-})
-
-minetest.register_craftitem("lottores:silver_ingot", {
-	description = SL("Silver Ingot"),
-	inventory_image = "lottores_silver_ingot.png",
-})
-
-minetest.register_craftitem("lottores:tin_lump", {
-	description = SL("Tin Lump"),
-	inventory_image = "lottores_tin_lump.png",
-})
-
-minetest.register_craftitem("lottores:tin_ingot", {
-	description = SL("Tin Ingot"),
-	inventory_image = "lottores_tin_ingot.png",
-})
-
-minetest.register_craftitem("lottores:lead_lump", {
-	description = SL("Lead Lump"),
-	inventory_image = "lottores_lead_lump.png",
-})
-
-minetest.register_craftitem("lottores:lead_ingot", {
-	description = SL("Lead Ingot"),
-	inventory_image = "lottores_lead_ingot.png",
-})
-
-minetest.register_craftitem("lottores:mithril_lump", {
-	description = SL("Mithril Lump"),
-	inventory_image = "lottores_mithril_lump.png",
-})
-
-minetest.register_craftitem("lottores:mithril_ingot", {
-	description = SL("Mithril Ingot"),
-	inventory_image = "lottores_mithril_ingot.png",
-})
 
 minetest.register_craftitem("lottores:galvorn_ingot", {
 	description = SL("Galvorn Ingot"),
@@ -355,21 +14,6 @@ minetest.register_craftitem("lottores:tilkal_ingot", {
      groups = {forbidden=1},
 })
 
-minetest.register_craftitem("lottores:blue_gem", {
-	description = SL("Blue Gem"),
-	inventory_image = "lottores_bluegem.png",
-})
-
-minetest.register_craftitem("lottores:red_gem", {
-	description = SL("Red Gem"),
-	inventory_image = "lottores_redgem.png",
-})
-
-minetest.register_craftitem("lottores:white_gem", {
-	description = SL("White Gem"),
-	inventory_image = "lottores_whitegem.png",
-})
-
 -- Nodes
 
 minetest.register_node("lottores:tilkal", {
@@ -377,22 +21,6 @@ minetest.register_node("lottores:tilkal", {
 	tiles = {"lottores_tilkal.png"},
 	sounds = default.node_sound_metal_defaults(),
 	groups = {forbidden=1},
-})
-
-minetest.register_node("lottores:limestone", {
-	description = SL("Limestone"),
-	tiles = {"lottores_limestone_ore.png"},
-	is_ground_content = true,
-	groups = {cracky=3, stone=2},
-	sounds = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("lottores:marble", {
-	description = SL("Marble"),
-	tiles = {"lottores_marble.png"},
-	is_ground_content = true,
-	groups = {cracky=3},
-	sounds = default.node_sound_stone_defaults(),
 })
 
 minetest.register_node("lottores:geodes_crystal_1", {
@@ -518,38 +146,6 @@ minetest.register_node("lottores:geodes_crystal_5", {
             {-0.1875,-0.5,0,0.125,0.0625,0.5},
         }
     }
-})
-
-minetest.register_node("lottores:silver_block", {
-	description = SL("Silver Block"),
-	tiles = {"lottores_silver_block.png"},
-	is_ground_content = true,
-	groups = {cracky=1,level=2},
-	sounds = default.node_sound_metal_defaults(),
-})
-
-minetest.register_node("lottores:tin_block", {
-	description = SL("Tin Block"),
-	tiles = {"lottores_tin_block.png"},
-	is_ground_content = true,
-	groups = {cracky=1},
-	sounds = default.node_sound_metal_defaults(),
-})
-
-minetest.register_node("lottores:lead_block", {
-	description = SL("Lead Block"),
-	tiles = {"lottores_lead_block.png"},
-	is_ground_content = true,
-	groups = {cracky=1},
-	sounds = default.node_sound_metal_defaults(),
-})
-
-minetest.register_node("lottores:mithril_block", {
-	description = SL("Mithril Block"),
-	tiles = {"lottores_mithril_block.png"},
-	is_ground_content = true,
-	groups = {cracky=1,level=2},
-	sounds = default.node_sound_metal_defaults(),
 })
 
 minetest.register_node("lottores:galvorn_block", {
@@ -775,48 +371,6 @@ stairs.register_stair_and_slab("tilkal", "lottores:tilkal",
 		SL("Tilkal Slab"),
 		default.node_sound_metal_defaults())
 
-stairs.register_stair_and_slab("limestone", "lottores:limestone",
-        {cracky=3, stone=2},
-		{"lottores_limestone_ore.png"},
-		SL("Limestone Stair"),
-		SL("Limestone Slab"),
-		default.node_sound_stone_defaults())
-
-stairs.register_stair_and_slab("marble", "lottores:marble",
-        {cracky=3},
-		{"lottores_marble.png"},
-		SL("Marble Stair"),
-		SL("Marble Slab"),
-		default.node_sound_stone_defaults())
-
-stairs.register_stair_and_slab("silver_block", "lottores:silver_block",
-        {cracky=1,level=2},
-		{"lottores_silver_block.png"},
-		SL("Silver Stair"),
-		SL("Silver Slab"),
-		default.node_sound_metal_defaults())
-
-stairs.register_stair_and_slab("tin_block", "lottores:tin_block",
-        {cracky=1},
-		{"lottores_tin_block.png"},
-		SL("Tin Stair"),
-		SL("Tin Slab"),
-		default.node_sound_metal_defaults())
-
-stairs.register_stair_and_slab("lead_block", "lottores:lead_block",
-        {cracky=1},
-		{"lottores_lead_block.png"},
-		SL("Lead Stair"),
-		SL("Lead Slab"),
-		default.node_sound_metal_defaults())
-
-stairs.register_stair_and_slab("mithril_block", "lottores:mithril_block",
-        {cracky=1,level=2},
-		{"lottores_mithril_block.png"},
-		SL("Mithril Stair"),
-		SL("Mithril Slab"),
-		default.node_sound_metal_defaults())
-
 stairs.register_stair_and_slab("galvorn_block", "lottores:galvorn_block",
         {cracky=1,level=2,forbidden=1},
 		{"lottores_galvorn_block.png"},
@@ -829,7 +383,7 @@ stairs.register_stair_and_slab("galvorn_block", "lottores:galvorn_block",
 minetest.register_craft({
 	type = "shapeless",
 	output = "lottores:galvorn_ingot",
-	recipe = {"lottores:lead_ingot", "default:mese_crystal"}
+	recipe = {"lord_ores:lead_ingot", "lord_ores:mese_crystal"}
 })
 
 minetest.register_craft({
@@ -852,34 +406,19 @@ minetest.register_craft({
 	type = "shapeless",
 	output = "lottores:tilkal_ingot",
 	recipe = {
-		"default:copper_ingot",
-		"lottores:silver_ingot",
-		"lottores:tin_ingot",
-		"lottores:lead_ingot",
-		"default:steel_ingot",
-		"default:gold_ingot",
+		"lord_ores:copper_ingot",
+		"lord_ores:silver_ingot",
+		"lord_ores:tin_ingot",
+		"lord_ores:lead_ingot",
+		"lord_ores:steel_ingot",
+		"lord_ores:gold_ingot",
 	}
 })
 
-minetest.register_craft({
-	output = 'lottores:limestone',
-	recipe = {
-		{'lottores:limestone_lump', 'lottores:limestone_lump', 'lottores:limestone_lump'},
-		{'lottores:limestone_lump', 'lottores:limestone_lump', 'lottores:limestone_lump'},
-		{'lottores:limestone_lump', 'lottores:limestone_lump', 'lottores:limestone_lump'},
-	}
-})
-
-minetest.register_craft({
-	output = 'lottores:limestone_lump 9',
-	recipe = {
-		{'lottores:limestone'},
-	}
-})
-
-minetest.register_craft({
+--TODO: move it to lord_ores
+--[[minetest.register_craft({
 	type = "cooking",
-	output = "lottores:marble",
+	output = "lord_ores:marble",
 	recipe = "lottores:limestone",
 })
 
@@ -887,71 +426,7 @@ minetest.register_craft({
 	type = "cooking",
 	output = "lottores:geodes_crystal_1",
 	recipe = "lottores:rough_rock_lump",
-})
-
-minetest.register_craft({
-	output = 'lottores:silver_block',
-	recipe = {
-		{'lottores:silver_ingot', 'lottores:silver_ingot', 'lottores:silver_ingot'},
-		{'lottores:silver_ingot', 'lottores:silver_ingot', 'lottores:silver_ingot'},
-		{'lottores:silver_ingot', 'lottores:silver_ingot', 'lottores:silver_ingot'},
-	}
-})
-
-minetest.register_craft({
-	output = 'lottores:silver_ingot 9',
-	recipe = {
-		{'lottores:silver_block'},
-	}
-})
-
-minetest.register_craft({
-	output = 'lottores:tin_block',
-	recipe = {
-		{'lottores:tin_ingot', 'lottores:tin_ingot', 'lottores:tin_ingot'},
-		{'lottores:tin_ingot', 'lottores:tin_ingot', 'lottores:tin_ingot'},
-		{'lottores:tin_ingot', 'lottores:tin_ingot', 'lottores:tin_ingot'},
-	}
-})
-
-minetest.register_craft({
-	output = 'lottores:tin_ingot 9',
-	recipe = {
-		{'lottores:tin_block'},
-	}
-})
-
-minetest.register_craft({
-	output = 'lottores:lead_block',
-	recipe = {
-		{'lottores:lead_ingot', 'lottores:lead_ingot', 'lottores:lead_ingot'},
-		{'lottores:lead_ingot', 'lottores:lead_ingot', 'lottores:lead_ingot'},
-		{'lottores:lead_ingot', 'lottores:lead_ingot', 'lottores:lead_ingot'},
-	}
-})
-
-minetest.register_craft({
-	output = 'lottores:lead_ingot 9',
-	recipe = {
-		{'lottores:lead_block'},
-	}
-})
-
-minetest.register_craft({
-	output = 'lottores:mithril_block',
-	recipe = {
-		{'lottores:mithril_ingot', 'lottores:mithril_ingot', 'lottores:mithril_ingot'},
-		{'lottores:mithril_ingot', 'lottores:mithril_ingot', 'lottores:mithril_ingot'},
-		{'lottores:mithril_ingot', 'lottores:mithril_ingot', 'lottores:mithril_ingot'},
-	}
-})
-
-minetest.register_craft({
-	output = 'lottores:mithril_ingot 9',
-	recipe = {
-		{'lottores:mithril_block'},
-	}
-})
+})]]
 
 minetest.register_craft({
 	output = 'lottores:galvorn_block',
@@ -972,7 +447,7 @@ minetest.register_craft({
 minetest.register_craft({
 	type = "shapeless",
 	output = "lottores:ithildin_1",
-	recipe = {"lottores:mithril_ingot", "lottores:geodes_crystal_1"}
+	recipe = {"lord_ores:mithril_ingot", "lottores:geodes_crystal_1"}
 })
 
 minetest.register_craft({
@@ -984,7 +459,7 @@ minetest.register_craft({
 minetest.register_craft({
 	type = "shapeless",
 	output = "lottores:ithildin_lamp_1",
-	recipe = {"lottores:mithril_ingot", "lottother:blue_torch"}
+	recipe = {"lord_ores:mithril_ingot", "lottother:blue_torch"}
 })
 
 minetest.register_craft({
@@ -1130,53 +605,6 @@ stairs.register_stair_and_slab("salt", "lottores:salt_block",
 		default.node_sound_stone_defaults())
 
 -- Cooking
--- Серебро и изделия
-minetest.register_craft({
-	type = "cooking",
-	output = "lottores:silver_ingot",
-	recipe = "lottores:silver_lump",
-})
-minetest.register_craft({
-	type = "cooking",
-	output = "lottores:silver_ingot",
-	recipe = "group:silver_item",
-})
-
--- Мифрил и изделия
-minetest.register_craft({
-	type = "cooking",
-	output = "lottores:mithril_ingot",
-	recipe = "lottores:mithril_lump",
-})
-minetest.register_craft({
-	type = "cooking",
-	output = "lottores:mithril_ingot",
-	recipe = "group:mithril_item",
-})
-
--- Олово и изделия
-minetest.register_craft({
-	type = "cooking",
-	output = "lottores:tin_ingot",
-	recipe = "lottores:tin_lump",
-})
-minetest.register_craft({
-	type = "cooking",
-	output = "lottores:tin_ingot",
-	recipe = "group:tin_item",
-})
-
--- Свинец и изделия
-minetest.register_craft({
-	type = "cooking",
-	output = "lottores:lead_ingot",
-	recipe = "lottores:lead_lump",
-})
-minetest.register_craft({
-	type = "cooking",
-	output = "lottores:lead_ingot",
-	recipe = "group:lead_item",
-})
 
 minetest.register_craft({
 	type = "cooking",

@@ -46,8 +46,8 @@ stairs.register_stair_and_slab("marble_brick", "lottblocks:marble_brick",
 minetest.register_craft({
 	output = 'lottblocks:marble_brick 4',
 	recipe = {
-		{'lottores:marble', 'lottores:marble'},
-		{'lottores:marble', 'lottores:marble'},
+		{'lord_ores:marble', 'lord_ores:marble'},
+		{'lord_ores:marble', 'lord_ores:marble'},
 	}
 })
 minetest.register_craft({

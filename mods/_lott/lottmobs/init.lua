@@ -239,7 +239,7 @@ mobs:register_mob("lottmobs:rohan_guard", {
 		chance = 15,
 		min = 1,
 		max = 1,},
-		{name = "default:bronze_ingot",
+		{name = "lord_ores:bronze_ingot",
 		chance = 7,
 		min = 1,
 		max = 5,},
@@ -306,7 +306,7 @@ mobs:register_mob("lottmobs:rohan_guard", {
 		attack = "default_punch2",
 	},
 	on_rightclick = function(self, clicker)
-		lottmobs.guard(self, clicker, "default:goldblock")
+		lottmobs.guard(self, clicker, "lord_ores:gold_block")
 	end,
 	attacks_monsters = true,
 	peaceful = true,
@@ -338,7 +338,7 @@ mobs:register_mob("lottmobs:gondor_guard", {
 		chance = 35,
 		min = 1,
 		max = 1,},
-		{name = "default:steel_ingot",
+		{name = "lord_ores:steel_ingot",
 		chance = 10,
 		min = 2,
 		max = 5,},
@@ -421,7 +421,7 @@ mobs:register_mob("lottmobs:gondor_guard", {
 		attack = "default_punch2",
 	},
 	on_rightclick = function(self, clicker)
-		lottmobs.guard(self, clicker, "default:goldblock")
+		lottmobs.guard(self, clicker, "lord_ores:gold_block")
 	end,
 	attacks_monsters = true,
 	peaceful = true,
@@ -449,7 +449,7 @@ mobs:register_mob("lottmobs:ithilien_ranger", {
 	armor = 100,
 	damage = 6,
 	drops = {
-		{name = "default:steel_ingot",
+		{name = "lord_ores:steel_ingot",
 		chance = 10,
 		min = 2,
 		max = 5,},
@@ -516,7 +516,7 @@ mobs:register_mob("lottmobs:ithilien_ranger", {
 		attack = "default_punch2",
 	},
 	on_rightclick = function(self, clicker)
-		lottmobs.guard(self, clicker, "default:goldblock")
+		lottmobs.guard(self, clicker, "lord_ores:gold_block")
 	end,
 	attacks_monsters = true,
 	peaceful = true,
@@ -1294,7 +1294,7 @@ mobs:register_mob("lottmobs:nazgul", {
 	run_velocity = 3,
 	damage = 10,
 	drops = {
-		{name = "lottores:mithril_ingot",		chance = 1,		min = 5,		max = 15,},
+		{name = "lord_ores:mithril_ingot",		chance = 1,		min = 5,		max = 15,},
 		{name = "lottarmor:chestplate_gold",		chance = 3,		min = 1,		max = 11,},
 		{name = "lottarmor:leggings_gold",		chance = 3,		min = 1,		max = 1,},
 		{name = "lottarmor:helmet_gold",		chance = 3,		min = 1,		max = 1,},
@@ -1350,7 +1350,7 @@ mobs:register_mob("lottmobs:witch_king", {
 	run_velocity = 3,
 	damage = 12,
 	drops = {
-		{name = "lottores:mithril_ingot",		chance = 1,		min = 20,		max = 40,},
+		{name = "lord_ores:mithril_ingot",		chance = 1,		min = 20,		max = 40,},
 		{name = "lottarmor:chestplate_mithril",		chance = 3,		min = 1,		max = 11,},
 		{name = "lottarmor:leggings_mithril",		chance = 3,		min = 1,		max = 1,},
 		{name = "lottarmor:helmet_mithril",		chance = 3,		min = 1,		max = 1,},
@@ -1407,7 +1407,7 @@ mobs:register_mob("lottmobs:balrog", {
 	run_velocity = 3,
 	damage = 30,
 	drops = {
-		{name = "lottores:mithril_ingot",					chance = 5,		min = 10,		max = 50,},
+		{name = "lord_ores:mithril_ingot",					chance = 5,		min = 10,		max = 50,},
 		{name = "lottores:mithrilsword",					chance = 5,		min = 1,		max = 1,},
 		{name = "lottores:mithrilpickaxe",				chance = 5,		min = 1,		max = 1,},
 		{name = "lottweapons:mithril_battleaxe",	chance = 5,		min = 1,		max = 1,},

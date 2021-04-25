@@ -40,7 +40,7 @@ function lottblocks.register_wooden_stuff(name, description, texture, wood_name)
 		minetest.register_craft({
 			output = "lottblocks:door_" .. name .. "_lock",
 			recipe = {
-				{ "lottblocks:door_" .. name, "default:steel_ingot" }
+				{ "lottblocks:door_" .. name, "lord_ores:steel_ingot" }
 			}
 		})
 		node_groups.not_in_creative_inventory = 0

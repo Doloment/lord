@@ -51,9 +51,9 @@ minetest.register_node("castle:anvil", {
 minetest.register_craft({
 	output = "castle:anvil",
 	recipe = {
-		{ "default:steel_ingot", "default:steel_ingot", "default:steel_ingot" },
-		{ "", "default:steel_ingot", "" },
-		{ "default:steel_ingot", "default:steel_ingot", "default:steel_ingot" },
+		{ "lord_ores:steel_ingot", "lord_ores:steel_ingot", "lord_ores:steel_ingot" },
+		{ "", "lord_ores:steel_ingot", "" },
+		{ "lord_ores:steel_ingot", "lord_ores:steel_ingot", "lord_ores:steel_ingot" },
 	}
 })
 
@@ -211,9 +211,9 @@ minetest.register_abm({
 minetest.register_craft({
 	output = "castle:workbench",
 	recipe = {
-		{ "default:steel_ingot", "default:steel_ingot", "default:steel_ingot" },
-		{ "default:wood", "default:wood", "default:steel_ingot" },
-		{ "default:tree", "default:tree", "default:steel_ingot" },
+		{ "lord_ores:steel_ingot", "lord_ores:steel_ingot", "lord_ores:steel_ingot" },
+		{ "default:wood", "default:wood", "lord_ores:steel_ingot" },
+		{ "default:tree", "default:tree", "lord_ores:steel_ingot" },
 	}
 })
 

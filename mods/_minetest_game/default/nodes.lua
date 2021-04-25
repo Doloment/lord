@@ -23,60 +23,6 @@ minetest.register_node("default:desert_stone", {
 	sounds            = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("default:stone_with_coal", {
-	description       = SL("Coal Ore"),
-	tiles             = { "default_stone.png^default_mineral_coal.png" },
-	is_ground_content = true,
-	groups            = { cracky = 3 },
-	drop              = 'default:coal_lump',
-	sounds            = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("default:stone_with_iron", {
-	description       = SL("Iron Ore"),
-	tiles             = { "default_stone.png^default_mineral_iron.png" },
-	is_ground_content = true,
-	groups            = { cracky = 2 },
-	drop              = 'default:iron_lump',
-	sounds            = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("default:stone_with_copper", {
-	description       = SL("Copper Ore"),
-	tiles             = { "default_stone.png^default_mineral_copper.png" },
-	is_ground_content = true,
-	groups            = { cracky = 2 },
-	drop              = 'default:copper_lump',
-	sounds            = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("default:stone_with_mese", {
-	description       = SL("Mese Ore"),
-	tiles             = { "default_stone.png^default_mineral_mese.png" },
-	is_ground_content = true,
-	groups            = { cracky = 1 },
-	drop              = "default:mese_crystal",
-	sounds            = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("default:stone_with_gold", {
-	description       = SL("Gold Ore"),
-	tiles             = { "default_stone.png^default_mineral_gold.png" },
-	is_ground_content = true,
-	groups            = { cracky = 2 },
-	drop              = "default:gold_lump",
-	sounds            = default.node_sound_stone_defaults(),
-})
-
-minetest.register_node("default:stone_with_diamond", {
-	description       = SL("Diamond Ore"),
-	tiles             = { "default_stone.png^default_mineral_diamond.png" },
-	is_ground_content = true,
-	groups            = { cracky = 1 },
-	drop              = "default:diamond",
-	sounds            = default.node_sound_stone_defaults(),
-})
-
 minetest.register_node("default:stonebrick", {
 	description = SL("Stone Brick"),
 	tiles       = { "default_stone_brick.png" },
@@ -677,7 +623,7 @@ minetest.register_node("default:fence_wood", {
 })
 
 minetest.register_node("default:ladder", {
-	description        = SL("Ladder"),
+	description        = SL("Apple Ladder"),
 	drawtype           = "signlike",
 	tiles              = { "default_ladder.png" },
 	inventory_image    = "default_ladder.png",
@@ -698,86 +644,86 @@ minetest.register_node("default:ladder", {
 	sounds             = default.node_sound_wood_defaults(),
 })
 
--- новый вариант (но проблемы с ориентацией при замене старого варианта)
---minetest.register_node("default:ladder", {
---description = SL("Ladder"),
-----drawtype = "signlike",
---drawtype = "nodebox",
---tiles = {"default_planks.png"},
---particle_image = {"default_planks.png"},
---inventory_image = "default_ladder.png",
---wield_image = "default_ladder.png",
---paramtype = "light",
---paramtype2 = "facedir",
---is_ground_content = true,
-----paramtype2 = "wallmounted",
---walkable = true,
---climbable = true,
---is_ground_content = false,
-----selection_box = {
-----type = "wallmounted",
-------wall_top = = <default>
-------wall_bottom = = <default>
-------wall_side = = <default>
-----},
---node_box = {
---type = "fixed",
---fixed = {
---{-0.5, -0.5, 0.5-1/7, -0.5+1/7, 0.5, 0.5},
---{0.5-1/7, -0.5, 0.5-1/7, 0.5, 0.5, 0.5},
---{-0.5+1/7, 0.5-1/6-1/12, 0.5-1/16, 0.5-1/7, 0.5-1/12, 0.5},
---{-0.5+1/7, 0.5-1/12-1/6*3, 0.5-1/16, 0.5-1/7, 0.5-1/12-1/6*2, 0.5},
---{-0.5+1/7, 0.5-1/12-1/6*5, 0.5-1/16, 0.5-1/7, 0.5-1/12-1/6*4, 0.5},
---},
---},
---selection_box = {
---type = "fixed",
---fixed = {
---{-0.5, -0.5, 0.5-1/7, -0.5+1/7, 0.5, 0.5},
---{0.5-1/7, -0.5, 0.5-1/7, 0.5, 0.5, 0.5},
---{-0.5+1/7, 0.5-1/6-1/12, 0.5-1/16, 0.5-1/7, 0.5-1/12, 0.5},
---{-0.5+1/7, 0.5-1/12-1/6*3, 0.5-1/16, 0.5-1/7, 0.5-1/12-1/6*2, 0.5},
---{-0.5+1/7, 0.5-1/12-1/6*5, 0.5-1/16, 0.5-1/7, 0.5-1/12-1/6*4, 0.5},
---},
---},
---on_place = function(itemstack, placer, pointed_thing)
---if pointed_thing.type == "node" and
---minetest.registered_nodes[minetest.get_node(pointed_thing.above).name].buildable_to == true then
---local param2 = nil
---local above = pointed_thing.above
---local above_2 = {x = above.x, y = above.y, z = above.z}
---above_2.y = above_2.y + 1
+--[[minetest.register_node("default:apple_ladder", {
+	description = SL("Apple Ladder"),
+	--drawtype = "signlike",
+	drawtype = "nodebox",
+	tiles = {"default_planks.png"},
+	particle_image = {"default_planks.png"},
+	inventory_image = "default_ladder.png",
+	wield_image = "default_ladder.png",
+	paramtype = "light",
+	--paramtype2 = "facedir",
+	paramtype2 = "wallmounted",
+	walkable = true,
+	climbable = true,
+	is_ground_content = false,
+	selection_box = {
+		type = "wallmounted",
+		--wall_top = = <default>
+		--wall_bottom = = <default>
+		--wall_side = = <default>
+	},
+	node_box = {
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, 0.5-1/7, -0.5+1/7, 0.5, 0.5},
+			{0.5-1/7, -0.5, 0.5-1/7, 0.5, 0.5, 0.5},
+			{-0.5+1/7, 0.5-1/6-1/12, 0.5-1/16, 0.5-1/7, 0.5-1/12, 0.5},
+			{-0.5+1/7, 0.5-1/12-1/6*3, 0.5-1/16, 0.5-1/7, 0.5-1/12-1/6*2, 0.5},
+			{-0.5+1/7, 0.5-1/12-1/6*5, 0.5-1/16, 0.5-1/7, 0.5-1/12-1/6*4, 0.5},
+		},
+	},
+	selection_box = {
+		type = "fixed",
+		fixed = {
+			{-0.5, -0.5, 0.5-1/7, -0.5+1/7, 0.5, 0.5},
+			{0.5-1/7, -0.5, 0.5-1/7, 0.5, 0.5, 0.5},
+			{-0.5+1/7, 0.5-1/6-1/12, 0.5-1/16, 0.5-1/7, 0.5-1/12, 0.5},
+			{-0.5+1/7, 0.5-1/12-1/6*3, 0.5-1/16, 0.5-1/7, 0.5-1/12-1/6*2, 0.5},
+			{-0.5+1/7, 0.5-1/12-1/6*5, 0.5-1/16, 0.5-1/7, 0.5-1/12-1/6*4, 0.5},
+		},
+	},
+	on_place = function(itemstack, placer, pointed_thing)
+		if pointed_thing.type == "node" and
+		minetest.registered_nodes[minetest.get_node(pointed_thing.above).name].buildable_to == true then
+			local param2 = nil
+			local above = pointed_thing.above
+			local above_2 = {x = above.x, y = above.y, z = above.z}
+			above_2.y = above_2.y + 1
+		end
 
---if minetest.is_protected(above, placer:get_player_name()) or
---minetest.is_protected(above_2, placer:get_player_name()) then
---minetest.record_protection_violation(above, placer:get_player_name())
---return itemstack
---end
+		if minetest.is_protected(above, placer:get_player_name()) or
+		 minetest.is_protected(above_2, placer:get_player_name()) then
+			minetest.record_protection_violation(above, placer:get_player_name())
+			return itemstack
+		end
 
---if pointed_thing.above.x < pointed_thing.under.x then
---param2 = 1
---elseif pointed_thing.above.x > pointed_thing.under.x then
---param2 = 3
---elseif pointed_thing.above.z < pointed_thing.under.z then
---param2 = 0
---elseif pointed_thing.above.z > pointed_thing.under.z then
---param2 = 2
---end
+		if pointed_thing.above.x < pointed_thing.under.x then
+			param2 = 1
+		elseif pointed_thing.above.x > pointed_thing.under.x then
+			param2 = 3
+		elseif pointed_thing.above.z < pointed_thing.under.z then
+			param2 = 0
+		elseif pointed_thing.above.z > pointed_thing.under.z then
+			param2 = 2
+		end
 
---if param2 then
---minetest.set_node(pointed_thing.above,{name = "default:ladder", param2 = param2})
---if not default.creative then
---itemstack:take_item()
---end
---end
---return itemstack
---end
---end,
---node_placement_prediction = "",
---groups = {choppy=2,oddly_breakable_by_hand=3,flammable=2, wooden = 1},
---legacy_wallmounted = true,
---sounds = default.node_sound_wood_defaults(),
---})
+		if param2 then
+			minetest.set_node(pointed_thing.above,{name = "default:ladder", param2 = param2})
+			if not default.creative then
+				itemstack:take_item()
+			end
+		end
+
+		return itemstack
+		end
+	end,
+	node_placement_prediction = "",
+	groups = {choppy=2,oddly_breakable_by_hand=3,flammable=2, wooden = 1},
+	legacy_wallmounted = true,
+	sounds = default.node_sound_wood_defaults(),
+})]]
 
 minetest.register_node("default:cloud", {
 	description = SL("Cloud"),
@@ -1594,22 +1540,6 @@ minetest.register_node("default:mossycobble", {
 	sounds            = default.node_sound_stone_defaults(),
 })
 
-minetest.register_node("default:coalblock", {
-	description       = SL("Coal Block"),
-	tiles             = { "default_coal_block.png" },
-	is_ground_content = true,
-	groups            = { cracky = 3, flammable = 10 },
-	sounds            = default.node_sound_stone_defaults(),
-	on_punch          = function(pos, node, puncher)
-		if puncher:get_wielded_item():get_name() == "default:torch" then
-			local pos_above = { x = pos.x, y = pos.y + 1, z = pos.z }
-			if minetest.get_node(pos_above).name == "air" then
-				minetest.set_node(pos_above, { name = "fire:basic_flame" })
-			end
-		end
-	end,
-})
-
 minetest.register_node("default:charcoalblock", {
 	description       = SL("Charcoal Block"),
 	tiles             = { "default_charcoal_block.png" },
@@ -1624,55 +1554,6 @@ minetest.register_node("default:charcoalblock", {
 			end
 		end
 	end,
-})
-
-minetest.register_node("default:steelblock", {
-	description       = SL("Steel Block"),
-	tiles             = { "default_steel_block.png" },
-	is_ground_content = true,
-	groups            = { cracky = 1, level = 2 },
-	sounds            = default.node_sound_metal_defaults(),
-})
-
-minetest.register_node("default:copperblock", {
-	description       = SL("Copper Block"),
-	tiles             = { "default_copper_block.png" },
-	is_ground_content = true,
-	groups            = { cracky = 1, level = 2 },
-	sounds            = default.node_sound_metal_defaults(),
-})
-
-minetest.register_node("default:bronzeblock", {
-	description       = SL("Bronze Block"),
-	tiles             = { "default_bronze_block.png" },
-	is_ground_content = true,
-	groups            = { cracky = 1, level = 2 },
-	sounds            = default.node_sound_metal_defaults(),
-})
-
-minetest.register_node("default:mese", {
-	description       = SL("Mese Block"),
-	tiles             = { "default_mese_block.png" },
-	is_ground_content = true,
-	groups            = { cracky = 1, level = 2 },
-	sounds            = default.node_sound_glass_defaults(),
-})
-minetest.register_alias("default:mese_block", "default:mese")
-
-minetest.register_node("default:goldblock", {
-	description       = SL("Gold Block"),
-	tiles             = { "default_gold_block.png" },
-	is_ground_content = true,
-	groups            = { cracky = 1 },
-	sounds            = default.node_sound_metal_defaults(),
-})
-
-minetest.register_node("default:diamondblock", {
-	description       = SL("Diamond Block"),
-	tiles             = { "default_diamond_block.png" },
-	is_ground_content = true,
-	groups            = { cracky = 1, level = 3 },
-	sounds            = default.node_sound_glass_defaults(),
 })
 
 minetest.register_node("default:obsidian_glass", {

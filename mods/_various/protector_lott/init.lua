@@ -307,7 +307,7 @@ minetest.register_craft({
 	output = "protector_lott:protect2 4",
 	recipe = {
 		{"default:stone", "default:stone", "default:stone"},
-		{"default:stone", "default:copper_ingot", "default:stone"},
+		{"default:stone", "lord_ores:copper_ingot", "default:stone"},
 		{"default:stone", "default:stone", "default:stone"},
 	}
 })

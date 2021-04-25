@@ -7,9 +7,9 @@ local SL = lord.require_intllib()
 minetest.register_craft({
 	output = "carts:cart",
 	recipe = {
-		{"default:steel_ingot", "", "default:steel_ingot"},
+		{"lord_ores:steel_ingot", "", "lord_ores:steel_ingot"},
 		{"group:wood", "", "group:wood"},
-		{"default:steel_ingot", "group:wood", "default:steel_ingot"},
+		{"lord_ores:steel_ingot", "group:wood", "lord_ores:steel_ingot"},
 	},
 })
 
@@ -21,9 +21,9 @@ minetest.register_craftitem("carts:gear", {
 minetest.register_craft({
 	output = "carts:gear 4",
 	recipe = {
-		{"", "default:steel_ingot", ""},
-		{"default:steel_ingot", "", "default:steel_ingot"},
-		{"", "default:steel_ingot", ""},
+		{"", "lord_ores:steel_ingot", ""},
+		{"lord_ores:steel_ingot", "", "lord_ores:steel_ingot"},
+		{"", "lord_ores:steel_ingot", ""},
 	}
 })
 
@@ -40,9 +40,9 @@ minetest.register_node("carts:steam_mechanism", {
 minetest.register_craft({
 	output = "carts:steam_mechanism",
 	recipe = {
-		{"default:steel_ingot", "group:stick", "default:steel_ingot"},
+		{"lord_ores:steel_ingot", "group:stick", "lord_ores:steel_ingot"},
 		{"carts:gear", "lottpotion:cauldron_full", "default:torch"},
-		{"default:steel_ingot", "default:coalblock", "default:steel_ingot"},
+		{"lord_ores:steel_ingot", "lord_ores:coal_block", "lord_ores:steel_ingot"},
 	}
 })
 
@@ -50,22 +50,22 @@ local function register_rail_craft(item, special)
 	minetest.register_craft({
 		output = item .. " 6",
 		recipe = {
-			{"default:steel_ingot", special, "default:steel_ingot"},
-			{"default:steel_ingot", "group:stick", "default:steel_ingot"},
-			{"default:steel_ingot", "", "default:steel_ingot"},
+			{"lord_ores:steel_ingot", special, "lord_ores:steel_ingot"},
+			{"lord_ores:steel_ingot", "group:stick", "lord_ores:steel_ingot"},
+			{"lord_ores:steel_ingot", "", "lord_ores:steel_ingot"},
 		}
 	})
 	minetest.register_craft({
 		output = item .. " 6",
 		recipe = {
-			{"default:steel_ingot", "", "default:steel_ingot"},
-			{"default:steel_ingot", "group:stick", "default:steel_ingot"},
-			{"default:steel_ingot", special, "default:steel_ingot"},
+			{"lord_ores:steel_ingot", "", "lord_ores:steel_ingot"},
+			{"lord_ores:steel_ingot", "group:stick", "lord_ores:steel_ingot"},
+			{"lord_ores:steel_ingot", special, "lord_ores:steel_ingot"},
 		}
 	})
 end
 
-register_rail_craft("carts:stopping_rail", "default:coal_lump")
+register_rail_craft("carts:stopping_rail", "lord_ores:coal_lump")
 register_rail_craft("carts:accelerating_rail", "carts:gear")
 register_rail_craft("carts:rail", "")
 
@@ -75,18 +75,18 @@ register_rail_craft("carts:rail", "")
 
 minetest.register_craft({
 	type = "cooking",
-	output = "default:steel_ingot",
+	output = "lord_ores:steel_ingot",
 	recipe = "carts:stopping_rail",
 })
 
 minetest.register_craft({
 	type = "cooking",
-	output = "default:steel_ingot",
+	output = "lord_ores:steel_ingot",
 	recipe = "carts:accelerating_rail",
 })
 
 minetest.register_craft({
 	type = "cooking",
-	output = "default:steel_ingot",
+	output = "lord_ores:steel_ingot",
 	recipe = "carts:rail",
 })

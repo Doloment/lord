@@ -320,9 +320,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "lord_homedecor:pole_wrought_iron 6",
 	recipe = {
-		{ "default:steel_ingot", },
-		{ "default:steel_ingot", },
-		{ "default:steel_ingot", },
+		{ "lord_ores:steel_ingot", },
+		{ "lord_ores:steel_ingot", },
+		{ "lord_ores:steel_ingot", },
 	},
 })
 
@@ -350,9 +350,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "lord_homedecor:wall_sconce 2",
 	recipe = {
-		{ "default:iron_lump", "", "" },
-		{ "default:iron_lump", "lord_homedecor:candle", "" },
-		{ "default:iron_lump", "", "" },
+		{ "lord_ores:iron_lump", "", "" },
+		{ "lord_ores:iron_lump", "lord_homedecor:candle", "" },
+		{ "lord_ores:iron_lump", "", "" },
 	}
 })
 
@@ -361,7 +361,7 @@ minetest.register_craft({
 	recipe = {
 		{ "" },
 		{ "lord_homedecor:candle_thin" },
-		{ "default:iron_lump" },
+		{ "lord_ores:iron_lump" },
 	}
 })
 
@@ -370,7 +370,7 @@ minetest.register_craft({
 	recipe = {
 		{ "" },
 		{ "lord_homedecor:candle_thin" },
-		{ "default:bronze_ingot" },
+		{ "lord_ores:bronze_ingot" },
 	}
 })
 
@@ -448,8 +448,8 @@ minetest.register_craft({
 	output = "lord_homedecor:wall_lamp 2",
 	recipe = {
 		{ "default:glass", "default:torch", "default:glass" },
-		{ "default:iron_lump", "group:stick", "" },
-		{ "default:iron_lump", "group:stick", "" },
+		{ "lord_ores:iron_lump", "group:stick", "" },
+		{ "lord_ores:iron_lump", "group:stick", "" },
 	},
 })
 

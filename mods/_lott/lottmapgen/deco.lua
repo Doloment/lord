@@ -21,9 +21,9 @@ minetest.register_on_generated(function(minp, maxp, seed)
 
 	local c_air = minetest.get_content_id("air")
 	local c_mossycobble = minetest.get_content_id("default:mossycobble")
-	local c_tomb_1 = minetest.get_content_id("lottblocks:dwarf_bottom")
-	local c_tomb_2 = minetest.get_content_id("lottblocks:dwarf_head")
-	local c_gold = minetest.get_content_id("default:goldblock")
+	--local c_tomb_1 = minetest.get_content_id("lottblocks:dwarf_bottom")
+	--local c_tomb_2 = minetest.get_content_id("lottblocks:dwarf_head")
+	local c_gold = minetest.get_content_id("lord_ores:gold_block")
 
 	local nixz = 1
 	for z = z0, z1 do
@@ -37,10 +37,10 @@ minetest.register_on_generated(function(minp, maxp, seed)
 					local vi = area:index(x, y+1, z)
 					if data[vi] == c_air and data[area:index(x, y+1, z+1)] == c_air then
 						if math.random(1,500) == 10 then
-							data[vi] = c_tomb_1
-							local vi = area:index(x, y+1, z+1)
-							data[vi] = c_tomb_2
-							local vi = area:index(x, y, z+1)
+							--data[vi] = c_tomb_1
+							--local vi = area:index(x, y+1, z+1)
+							--data[vi] = c_tomb_2
+							--local vi = area:index(x, y, z+1)
 							data[vi] = c_mossycobble
 							if math.random(1,75) == 7 then
 								if math.random(1,2) == 1 then

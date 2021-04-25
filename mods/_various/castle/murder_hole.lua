@@ -19,7 +19,7 @@ hole.types = {
 
 	{"dungeon_stone", "Dungeon Stone", "castle_dungeon_stone", "castle:dungeon_stone"},
 	{"pavement", "Paving Stone", "castle_pavement_brick", "castle:pavement"},
-	{"marble", "Marble", "lottores_marble", "lottores:marble"},
+	{"marble", "Marble", "lottores_marble", "lord_ores:marble"},
 	{"marble_brick", "Marble Brick", "lottblocks_marble_brick", "lottblocks:marble_brick"},
 	{"orc_brick", "Orc Brick", "lottblocks_orc_brick", "lottblocks:orc_brick"},
 

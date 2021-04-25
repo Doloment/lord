@@ -137,7 +137,7 @@ minetest.register_tool("screwdriver:screwdriver_galvorn", {
 minetest.register_craft({
 	output = "screwdriver:screwdriver",
 	recipe = {
-		{"default:steel_ingot", ""},
+		{"lord_ores:steel_ingot", ""},
 		{"", "group:stick"}
 	}
 })

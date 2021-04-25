@@ -54,7 +54,7 @@ function ghost.register_ghost_material(name)
 		node.drop = {
 			maxitems = 1,
 			items = {
-				{items = {node.drop, 'default:mese_crystal 8'}},
+				{items = {node.drop, 'lord_ores:mese_crystal 8'}},
 			}
 		}
 	elseif type(node.drop) == "table" then
@@ -62,14 +62,14 @@ function ghost.register_ghost_material(name)
 		node.drop = {
 			maxitems = 1,
 			items = {
-				{items = {orig_name, 'default:mese_crystal 8'}},
+				{items = {orig_name, 'lord_ores:mese_crystal 8'}},
 			}
 		}
 	else
 		node.drop = {
 			maxitems = 1,
 			items = {
-				{items = {orig_name, 'default:mese_crystal 8'}},
+				{items = {orig_name, 'lord_ores:mese_crystal 8'}},
 			}
 		}
 	end
@@ -82,7 +82,7 @@ ghost.has_crystals = function(crystalstack)
 		return false
 	end
 	local item_name = crystalstack:get_name()
-	if (item_name ~= "default:mese_crystal") then
+	if (item_name ~= "lord_ores:mese_crystal") then
 		return false
 	end
 	return true
@@ -136,7 +136,7 @@ minetest.register_tool("defaults:ghost_tool", {
 minetest.register_craft({
 	output = "defaults:ghost_tool",
 	recipe = {
-		{"default:mese_crystal"},
+		{"lord_ores:mese_crystal"},
 		{"lottother:ringsilver_ingot"},
 		{"lottother:ringsilver_ingot"},
 	},

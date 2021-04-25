@@ -291,8 +291,8 @@ minetest.register_craft( {
 minetest.register_craft({
 	output = 'lottpotion:cauldron_empty',
 	recipe = {
-		{'default:steel_ingot', '', 'default:steel_ingot'},
-		{'default:steel_ingot', '', 'default:steel_ingot'},
-		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
+		{'lord_ores:steel_ingot', '', 'lord_ores:steel_ingot'},
+		{'lord_ores:steel_ingot', '', 'lord_ores:steel_ingot'},
+		{'lord_ores:steel_ingot', 'lord_ores:steel_ingot', 'lord_ores:steel_ingot'},
 	}
 })

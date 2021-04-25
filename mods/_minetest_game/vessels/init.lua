@@ -72,9 +72,9 @@ minetest.register_node("vessels:steel_bottle", {
 minetest.register_craft( {
 	output = "vessels:steel_bottle 5",
 	recipe = {
-		{ "default:steel_ingot", "", "default:steel_ingot" },
-		{ "default:steel_ingot", "", "default:steel_ingot" },
-		{ "", "default:steel_ingot", "" }
+		{ "lord_ores:steel_ingot", "", "lord_ores:steel_ingot" },
+		{ "lord_ores:steel_ingot", "", "lord_ores:steel_ingot" },
+		{ "", "lord_ores:steel_ingot", "" }
 	}
 })
 
@@ -112,7 +112,7 @@ minetest.register_craft({
 
 minetest.register_craft( {
 	type = "cooking",
-	output = "default:steel_ingot",
+	output = "lord_ores:steel_ingot",
 	recipe = "vessels:steel_bottle",
 })
 

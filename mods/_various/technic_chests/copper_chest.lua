@@ -1,25 +1,25 @@
 minetest.register_craft({
 	output = 'technic:copper_chest 1',
 	recipe = {
-		{'default:copper_ingot','default:copper_ingot','default:copper_ingot'},
-		{'default:copper_ingot','technic:iron_chest','default:copper_ingot'},
-		{'default:copper_ingot','default:copper_ingot','default:copper_ingot'},
+		{'lord_ores:copper_ingot','lord_ores:copper_ingot','lord_ores:copper_ingot'},
+		{'lord_ores:copper_ingot','technic:iron_chest','lord_ores:copper_ingot'},
+		{'lord_ores:copper_ingot','lord_ores:copper_ingot','lord_ores:copper_ingot'},
 	}
 })
 
 minetest.register_craft({
 	output = 'technic:copper_locked_chest 1',
 	recipe = {
-		{'default:copper_ingot','default:copper_ingot','default:copper_ingot'},
-		{'default:copper_ingot','technic:iron_locked_chest','default:copper_ingot'},
-		{'default:copper_ingot','default:copper_ingot','default:copper_ingot'},
+		{'lord_ores:copper_ingot','lord_ores:copper_ingot','lord_ores:copper_ingot'},
+		{'lord_ores:copper_ingot','technic:iron_locked_chest','lord_ores:copper_ingot'},
+		{'lord_ores:copper_ingot','lord_ores:copper_ingot','lord_ores:copper_ingot'},
 	}
 })
 
 minetest.register_craft({
 	type = "shapeless",
 	output = "technic:copper_locked_chest 1",
-	recipe = {"technic:copper_chest", "default:steel_ingot"}
+	recipe = {"technic:copper_chest", "lord_ores:steel_ingot"}
 })
 
 technic.chests:register("Copper", {

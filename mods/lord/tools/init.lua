@@ -15,14 +15,14 @@ dofile(minetest.get_modpath(minetest.get_current_modname()) .. "/special.lua")
 tools.sources = {
 	wood = "group:wood",
 	stone = "group:stone",
-	steel = "default:steel_ingot",
-	bronze = "default:bronze_ingot",
-	copper = "default:copper_ingot",
-	tin = "lottores:tin_ingot",
-	silver = "lottores:silver_ingot",
-	gold = "default:gold_ingot",
+	steel = "lord_ores:steel_ingot",
+	bronze = "lord_ores:bronze_ingot",
+	copper = "lord_ores:copper_ingot",
+	tin = "lord_ores:tin_ingot",
+	silver = "lord_ores:silver_ingot",
+	gold = "lord_ores:gold_ingot",
 	galvorn = "lottores:galvorn_ingot",
-	mithril = "lottores:mithril_ingot",
+	mithril = "lord_ores:mithril_ingot",
 }
 
 -- A special item - the hand

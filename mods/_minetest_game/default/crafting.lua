@@ -41,7 +41,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'default:torch 4',
 	recipe = {
-		{'default:coal_lump'},
+		{'group:coal'},
 		{'group:stick'},
 	}
 })
@@ -58,7 +58,7 @@ minetest.register_craft({
 minetest.register_craft({
 	type = "shapeless",
 	output = "default:chest_locked",
-	recipe = {"default:chest", "default:steel_ingot"}
+	recipe = {"default:chest", "lord_ores:steel_ingot"}
 })
 
 minetest.register_craft({
@@ -67,22 +67,6 @@ minetest.register_craft({
 		{'group:stone', 'group:stone', 'group:stone'},
 		{'group:stone', '', 'group:stone'},
 		{'group:stone', 'group:stone', 'group:stone'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:coalblock',
-	recipe = {
-		{'default:coal_lump', 'default:coal_lump', 'default:coal_lump'},
-		{'default:coal_lump', 'default:coal_lump', 'default:coal_lump'},
-		{'default:coal_lump', 'default:coal_lump', 'default:coal_lump'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:coal_lump 9',
-	recipe = {
-		{'default:coalblock'},
 	}
 })
 
@@ -99,86 +83,6 @@ minetest.register_craft({
 	output = 'default:charcoal_lump 9',
 	recipe = {
 		{'default:charcoalblock'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:steelblock',
-	recipe = {
-		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
-		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
-		{'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:steel_ingot 9',
-	recipe = {
-		{'default:steelblock'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:copperblock',
-	recipe = {
-		{'default:copper_ingot', 'default:copper_ingot', 'default:copper_ingot'},
-		{'default:copper_ingot', 'default:copper_ingot', 'default:copper_ingot'},
-		{'default:copper_ingot', 'default:copper_ingot', 'default:copper_ingot'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:copper_ingot 9',
-	recipe = {
-		{'default:copperblock'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:bronzeblock',
-	recipe = {
-		{'default:bronze_ingot', 'default:bronze_ingot', 'default:bronze_ingot'},
-		{'default:bronze_ingot', 'default:bronze_ingot', 'default:bronze_ingot'},
-		{'default:bronze_ingot', 'default:bronze_ingot', 'default:bronze_ingot'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:bronze_ingot 9',
-	recipe = {
-		{'default:bronzeblock'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:goldblock',
-	recipe = {
-		{'default:gold_ingot', 'default:gold_ingot', 'default:gold_ingot'},
-		{'default:gold_ingot', 'default:gold_ingot', 'default:gold_ingot'},
-		{'default:gold_ingot', 'default:gold_ingot', 'default:gold_ingot'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:gold_ingot 9',
-	recipe = {
-		{'default:goldblock'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:diamondblock',
-	recipe = {
-		{'default:diamond', 'default:diamond', 'default:diamond'},
-		{'default:diamond', 'default:diamond', 'default:diamond'},
-		{'default:diamond', 'default:diamond', 'default:diamond'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:diamond 9',
-	recipe = {
-		{'default:diamondblock'},
 	}
 })
 
@@ -263,29 +167,6 @@ minetest.register_craft({
 })
 
 minetest.register_craft({
-	output = 'default:mese',
-	recipe = {
-		{'default:mese_crystal', 'default:mese_crystal', 'default:mese_crystal'},
-		{'default:mese_crystal', 'default:mese_crystal', 'default:mese_crystal'},
-		{'default:mese_crystal', 'default:mese_crystal', 'default:mese_crystal'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:mese_crystal 9',
-	recipe = {
-		{'default:mese'},
-	}
-})
-
-minetest.register_craft({
-	output = 'default:mese_crystal_fragment 9',
-	recipe = {
-		{'default:mese_crystal'},
-	}
-})
-
-minetest.register_craft({
 	output = 'default:obsidian_shard 9',
 	recipe = {
 		{'default:obsidian'}
@@ -335,8 +216,8 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "shapeless",
-	output = "default:bronze_ingot",
-	recipe = {"lottores:tin_ingot", "default:copper_ingot"},
+	output = "lord_ores:bronze_ingot",
+	recipe = {"lord_ores:tin_ingot", "lord_ores:copper_ingot"},
 })
 
 minetest.register_craft({
@@ -383,24 +264,6 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "cooking",
-	output = "default:steel_ingot",
-	recipe = "default:iron_lump",
-})
-
-minetest.register_craft({
-	type = "cooking",
-	output = "default:copper_ingot",
-	recipe = "default:copper_lump",
-})
-
-minetest.register_craft({
-	type = "cooking",
-	output = "default:gold_ingot",
-	recipe = "default:gold_lump",
-})
-
-minetest.register_craft({
-	type = "cooking",
 	output = "default:clay_brick",
 	recipe = "default:clay_lump",
 })
@@ -428,31 +291,6 @@ minetest.register_craft({
 	output = "default:charcoal_lump",
 	recipe = "group:wooden",
 })
-
-minetest.register_craft({
-	type = "cooking",
-	output = "default:steel_ingot",
-	recipe = "group:steel_item",
-})
-
-minetest.register_craft({
-	type = "cooking",
-	output = "default:copper_ingot",
-	recipe = "group:copper_item",
-})
-
-minetest.register_craft({
-	type = "cooking",
-	output = "default:bronze_ingot",
-	recipe = "group:bronze_item",
-})
-
-minetest.register_craft({
-	type = "cooking",
-	output = "default:gold_ingot",
-	recipe = "group:gold_item",
-})
-
 
 --
 -- Fuels
@@ -514,18 +352,6 @@ minetest.register_craft({
 
 minetest.register_craft({
 	type = "fuel",
-	recipe = "default:coal_lump",
-	burntime = 40,
-})
-
-minetest.register_craft({
-	type = "fuel",
-	recipe = "default:coalblock",
-	burntime = 370,
-})
-
-minetest.register_craft({
-	type = "fuel",
 	recipe = "default:charcoalblock",
 	burntime = 280,
 })
@@ -535,4 +361,3 @@ minetest.register_craft({
 	recipe = "default:lava_source",
 	burntime = 60,
 })
-

@@ -114,7 +114,7 @@ local register_bolt = function(material, material_group, dc, mass)
 	minetest.register_craft({
 		output = name..' 16',
 		recipe = {
-			{'default:steel_ingot', material_group..':'..material..'_ingot'},
+			{'lord_ores:steel_ingot', material_group..':'..material..'_ingot'},
 		}
 	})
 

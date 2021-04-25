@@ -281,14 +281,14 @@ minetest.register_tool("lottarmor:boots_mithril", {
 
 local craft_ingreds = {
 	wood = "group:wood",
-	tin = "lottores:tin_ingot",
-	copper = "default:copper_ingot",
-	steel = "default:steel_ingot",
-	bronze = "default:bronze_ingot",
-	silver = "lottores:silver_ingot",
-	gold = "default:gold_ingot",
+	tin = "lord_ores:tin_ingot",
+	copper = "lord_ores:copper_ingot",
+	steel = "lord_ores:steel_ingot",
+	bronze = "lord_ores:bronze_ingot",
+	silver = "lord_ores:silver_ingot",
+	gold = "lord_ores:gold_ingot",
 	galvorn = "lottores:galvorn_ingot",
-	mithril = "lottores:mithril_ingot",
+	mithril = "lord_ores:mithril_ingot",
 }
 
 for k, v in pairs(craft_ingreds) do

@@ -34,7 +34,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lord_homedecor:Fireplace 1',
 	recipe = {
-		{"default:steel_ingot", "lord_homedecor:sticks", "default:steel_ingot"},
+		{"lord_ores:steel_ingot", "lord_homedecor:sticks", "lord_ores:steel_ingot"},
 	}
 })
 minetest.register_craft({
@@ -56,14 +56,14 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lord_homedecor:BWtile 10',
 	recipe = {
-		{"lottores:marble", "default:obsidian"},
-		{"default:obsidian", "lottores:marble"},
+		{"lord_ores:marble", "default:obsidian"},
+		{"default:obsidian", "lord_ores:marble"},
 	}
 })
 minetest.register_craft({
 	output = 'lord_homedecor:grate 1',
 	recipe = {
-		{"default:steel_ingot", "default:steel_ingot"},
+		{"lord_ores:steel_ingot", "lord_ores:steel_ingot"},
 		{"default:glass", "default:glass"},
 	}
 })

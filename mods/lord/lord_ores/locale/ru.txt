@@ -1,0 +1,82 @@
+Limestone Ore = Известняковая Руда
+Limestone Lump = Кусок Известняка
+Limestone Block = Блок Известняка
+
+Rough Rock = Грубая Скала
+Rough Rock Lump = Кусок Грубой Скалы
+
+Coal Ore = Угольная Руда
+Coal Lump = Кусок Угля
+Coal Block = Угольный Блок
+
+Iron Ore = Железная Руда
+Iron Lump = Кусок Железа
+Steel Ingot = Стальной Слиток
+Steel Block = Стальной Блок
+
+Copper Ore = Медная Руда
+Copper Lump = Кусок Меди
+Copper Ingot = Медный Слиток
+Copper Block = Медный Блок
+
+Mese Ore = Руда Месе
+Mese Crystal = Кристалл Месе
+Mese Block = Блок Месе
+
+Diamond Ore = Алмазная Руда
+Diamond = Алмаз
+Diamond Block = Алмазный Блок
+
+Gold Ore = Золотая Руда
+Gold Lump = Кусок Золота
+Gold Ingot = Золотой Слиток
+Gold Block = Золотой Блок
+
+Raw Bronze = Сырая Бронза
+Bronze Ingot = Бронзовый Слиток
+Bronze Block = Бронзовый Блок
+
+Raw Brass = Сырая Латунь
+Brass Ingot = Латунный Слиток
+Brass Block = Латунный Блок
+
+Silver Ore = Серебряная Руда
+Silver Lump = Кусок Серебра
+Silver Ingot = Серебряный Слиток
+Silver Block = Серебряный Блок
+
+Tin Ore = Оловянная Руда
+Tin Lump = Кусок Олова
+Tin Ingot = Оловянный Слиток
+Tin Block = Оловянный Блок
+
+Lead Ore = Свинцовая Руда
+Lead Lump = Кусок Свинца
+Lead Ingot = Свинцовый Слиток
+Lead Block = Свинцовый Блок
+
+Mithril Ore = Мифриловая Руда
+Mithril Lump = Кусок Мифрила
+Mithril Ingot = Мифриловый Слиток
+Mithril Block = Мифриловый Блок
+
+Zinc Ore = Цинковая Руда
+Zinc Lump = Кусок Цинка
+Zinc Ingot = Цинковый Слиток
+Zinc Block = Цинковый Блок
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

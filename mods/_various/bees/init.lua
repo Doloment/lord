@@ -619,18 +619,18 @@ local SL = lord.require_intllib()
   minetest.register_craft({
     output = 'bees:extractor',
     recipe = {
-      {'group:wood','default:steel_ingot','group:wood'},
-      {'default:steel_ingot','group:stick','default:steel_ingot'},
-      {'group:wood','default:steel_ingot','group:wood'},
+      {'group:wood','lord_ores:steel_ingot','group:wood'},
+      {'lord_ores:steel_ingot','group:stick','lord_ores:steel_ingot'},
+      {'group:wood','lord_ores:steel_ingot','group:wood'},
     }
   })
 
   minetest.register_craft({
     output = 'bees:smoker',
     recipe = {
-      {'default:steel_ingot', 'wool:red', ''},
+      {'lord_ores:steel_ingot', 'wool:red', ''},
       {'', 'default:torch', ''},
-      {'', 'default:steel_ingot',''},
+      {'', 'lord_ores:steel_ingot',''},
     }
   })
 
@@ -646,7 +646,7 @@ local SL = lord.require_intllib()
   minetest.register_craft({
     output = 'bees:grafting_tool',
     recipe = {
-      {'', '', 'default:steel_ingot'},
+      {'', '', 'lord_ores:steel_ingot'},
       {'', 'group:stick', ''},
       {'', '', ''},
     }
@@ -892,9 +892,9 @@ local SL = lord.require_intllib()
       minetest.register_craft({
         output = 'bees:hive_industrial',
         recipe = {
-          {'default:steel_ingot','lord_homedecor:plastic_sheeting','default:steel_ingot'},
+          {'lord_ores:steel_ingot','lord_homedecor:plastic_sheeting','lord_ores:steel_ingot'},
           {'pipeworks:tube_1','bees:hive_artificial','pipeworks:tube_1'},
-          {'default:steel_ingot','lord_homedecor:plastic_sheeting','default:steel_ingot'},
+          {'lord_ores:steel_ingot','lord_homedecor:plastic_sheeting','lord_ores:steel_ingot'},
         }
       })
     end

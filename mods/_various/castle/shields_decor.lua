@@ -34,9 +34,9 @@ minetest.register_node("castle:shield", {
 minetest.register_craft({
 	output = "castle:shield",
 	recipe = {
-		{ "default:steel_ingot", "default:steel_ingot", "default:steel_ingot" },
-		{ "default:steel_ingot", "default:steel_ingot", "default:steel_ingot" },
-		{ "dye:red", "default:steel_ingot", "dye:blue" },
+		{ "lord_ores:steel_ingot", "lord_ores:steel_ingot", "lord_ores:steel_ingot" },
+		{ "lord_ores:steel_ingot", "lord_ores:steel_ingot", "lord_ores:steel_ingot" },
+		{ "dye:red", "lord_ores:steel_ingot", "dye:blue" },
 	}
 })
 
@@ -74,9 +74,9 @@ minetest.register_node("castle:shield_2", {
 minetest.register_craft({
 	output = "castle:shield_2",
 	recipe = {
-		{ "default:steel_ingot", "default:steel_ingot", "default:steel_ingot" },
-		{ "default:steel_ingot", "default:steel_ingot", "default:steel_ingot" },
-		{ "dye:cyan", "default:steel_ingot", "dye:yellow" },
+		{ "lord_ores:steel_ingot", "lord_ores:steel_ingot", "lord_ores:steel_ingot" },
+		{ "lord_ores:steel_ingot", "lord_ores:steel_ingot", "lord_ores:steel_ingot" },
+		{ "dye:cyan", "lord_ores:steel_ingot", "dye:yellow" },
 	}
 })
 
@@ -114,8 +114,8 @@ minetest.register_node("castle:shield_3", {
 minetest.register_craft({
 	output = "castle:shield_3",
 	recipe = {
-		{ "default:steel_ingot", "default:steel_ingot", "default:steel_ingot" },
-		{ "default:steel_ingot", "default:steel_ingot", "default:steel_ingot" },
-		{ "dye:grey", "default:steel_ingot", "dye:green" },
+		{ "lord_ores:steel_ingot", "lord_ores:steel_ingot", "lord_ores:steel_ingot" },
+		{ "lord_ores:steel_ingot", "lord_ores:steel_ingot", "lord_ores:steel_ingot" },
+		{ "dye:grey", "lord_ores:steel_ingot", "dye:green" },
 	}
 })

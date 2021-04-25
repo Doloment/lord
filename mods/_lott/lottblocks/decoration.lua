@@ -268,8 +268,8 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottblocks:mallorn_pillar',
 	recipe = {
-		{ 'lottplants:mallorntree', 'default:gold_ingot' },
-		{ 'default:gold_ingot', 'lottplants:mallorntree' },
+		{ 'lottplants:mallorntree', 'lord_ores:gold_ingot' },
+		{ 'lord_ores:gold_ingot', 'lottplants:mallorntree' },
 	}
 })
 
@@ -279,9 +279,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottblocks:dwarfstone_white 4',
 	recipe = {
-		{ 'default:steel_ingot', 'default:stone', 'default:steel_ingot' },
-		{ 'default:stone', 'default:steel_ingot', 'default:stone' },
-		{ 'default:steel_ingot', 'default:stone', 'default:steel_ingot' },
+		{ 'lord_ores:steel_ingot', 'default:stone', 'lord_ores:steel_ingot' },
+		{ 'default:stone', 'lord_ores:steel_ingot', 'default:stone' },
+		{ 'lord_ores:steel_ingot', 'default:stone', 'lord_ores:steel_ingot' },
 	}
 })
 
@@ -290,9 +290,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottblocks:dwarfstone_black 4',
 	recipe = {
-		{ 'default:coal_lump', 'default:stone', 'default:coal_lump' },
-		{ 'default:stone', 'default:coal_lump', 'default:stone' },
-		{ 'default:coal_lump', 'default:stone', 'default:coal_lump' },
+		{ 'lord_ores:coal_lump', 'default:stone', 'lord_ores:coal_lump' },
+		{ 'default:stone', 'lord_ores:coal_lump', 'default:stone' },
+		{ 'lord_ores:coal_lump', 'default:stone', 'lord_ores:coal_lump' },
 	}
 })
 
@@ -301,8 +301,8 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottblocks:dwarfstone_stripe 4',
 	recipe = {
-		{ 'default:stone', 'default:coal_lump' },
-		{ 'default:stone', 'default:coal_lump' },
+		{ 'default:stone', 'lord_ores:coal_lump' },
+		{ 'default:stone', 'lord_ores:coal_lump' },
 	}
 })
 

@@ -293,36 +293,36 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottthrowing:crossbow_steel',
 	recipe = {
-		{'', 'farming:string', 'default:steel_ingot'},
-		{'default:wood', 'default:wood', 'default:steel_ingot'},
-		{'', 'farming:string', 'default:steel_ingot'},
+		{'', 'farming:string', 'lord_ores:steel_ingot'},
+		{'default:wood', 'default:wood', 'lord_ores:steel_ingot'},
+		{'', 'farming:string', 'lord_ores:steel_ingot'},
 	}
 })
 
 minetest.register_craft({
 	output = 'lottthrowing:crossbow_tin',
 	recipe = {
-		{'', 'farming:string', 'lottores:tin_ingot'},
-		{'default:wood', 'default:wood', 'lottores:tin_ingot'},
-		{'', 'farming:string', 'lottores:tin_ingot'},
+		{'', 'farming:string', 'lord_ores:tin_ingot'},
+		{'default:wood', 'default:wood', 'lord_ores:tin_ingot'},
+		{'', 'farming:string', 'lord_ores:tin_ingot'},
 	}
 })
 
 minetest.register_craft({
 	output = 'lottthrowing:crossbow_silver',
 	recipe = {
-		{'', 'farming:string', 'lottores:silver_ingot'},
-		{'default:wood', 'default:wood', 'lottores:silver_ingot'},
-		{'', 'farming:string', 'lottores:silver_ingot'},
+		{'', 'farming:string', 'lord_ores:silver_ingot'},
+		{'default:wood', 'default:wood', 'lord_ores:silver_ingot'},
+		{'', 'farming:string', 'lord_ores:silver_ingot'},
 	}
 })
 
 minetest.register_craft({
 	output = 'lottthrowing:crossbow_gold',
 	recipe = {
-		{'', 'farming:string', 'default:gold_ingot'},
-		{'default:wood', 'default:wood', 'default:gold_ingot'},
-		{'', 'farming:string', 'default:gold_ingot'},
+		{'', 'farming:string', 'lord_ores:gold_ingot'},
+		{'default:wood', 'default:wood', 'lord_ores:gold_ingot'},
+		{'', 'farming:string', 'lord_ores:gold_ingot'},
 	}
 })
 
@@ -338,9 +338,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottthrowing:crossbow_mithril',
 	recipe = {
-		{'', 'farming:string', 'lottores:mithril_ingot'},
-		{'default:wood', 'default:wood', 'lottores:mithril_ingot'},
-		{'', 'farming:string', 'lottores:mithril_ingot'},
+		{'', 'farming:string', 'lord_ores:mithril_ingot'},
+		{'default:wood', 'default:wood', 'lord_ores:mithril_ingot'},
+		{'', 'farming:string', 'lord_ores:mithril_ingot'},
 	}
 })
 

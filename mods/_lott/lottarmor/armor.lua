@@ -13,10 +13,10 @@ ARMOR_HEAL_MULTIPLIER = 1
 ARMOR_MATERIALS = {
 	wood = "group:wood",
 	cactus = "default:cactus",
-	steel = "default:steel_ingot",
-	bronze = "default:bronze_ingot",
+	steel = "lord_ores:steel_ingot",
+	bronze = "lord_ores:bronze_ingot",
 	diamond = "default:diamond",
-	gold = "default:gold_ingot",
+	gold = "lord_ores:gold_ingot",
 	mithril = "moreores:mithril_ingot",
 	crystal = "ethereal:crystal_ingot",
 }

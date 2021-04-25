@@ -12,7 +12,7 @@ local get_formspec = function(player,page)
                --First potion
                .."label[1,2.2; "..SL("Mese Base Potion").."]"
                .."item_image_button[4,2;1,1;lottpotion:glass_bottle_water;lottpotion:glass_bottle_water;]"
-               .."item_image_button[5,2;1,1;default:mese_crystal_fragment;zcg:mese_crystal_fragment;]"
+               .."item_image_button[5,2;1,1;lord_ores:mese_shard;zcg:mese_crystal_fragment;]"
                .."image[6,2;1,1;zcg_craft_arrow.png]"
                .."item_image_button[7,2;1,1;lottpotion:glass_bottle_mese;zcg:glass_bottle_mese;]"
                --Second

@@ -42,7 +42,7 @@ function lottmobs.register_dwarf(n, hpmin, hpmax, textures, wv, rv, damg, arm, d
 		},
 		attacks_monsters     = true,
 		on_rightclick        = function(self, clicker)
-			lottmobs.guard(self, clicker, "default:goldblock")
+			lottmobs.guard(self, clicker, "lord_ores:gold_block")
 		end,
 		peaceful             = true,
 		group_attack         = true,
@@ -67,13 +67,13 @@ local textures1 = {
 
 local drops1 = {
 	{ name = "default:diamond", chance = 30, min = 1, max = 2, },
-	{ name = "default:iron_lump", chance = 3, min = 1, max = 7, },
-	{ name = "default:copper_lump", chance = 4, min = 1, max = 4, },
-	{ name = "default:iron_ingot", chance = 3, min = 1, max = 7, },
-	{ name = "lottores:tin_lump", chance = 8, min = 1, max = 2, },
-	{ name = "default:copper_lump", chance = 8, min = 1, max = 2, },
-	{ name = "default:bronze_ingot", chance = 5, min = 1, max = 6, },
-	{ name = "lottores:mithril_lump", chance = 50, min = 1, max = 3, },
+	{ name = "lord_ores:iron_lump", chance = 3, min = 1, max = 7, },
+	{ name = "lord_ores:copper_lump", chance = 4, min = 1, max = 4, },
+	{ name = "lord_ores:steel_ingot", chance = 3, min = 1, max = 7, },
+	{ name = "lord_ores:tin_lump", chance = 8, min = 1, max = 2, },
+	{ name = "lord_ores:copper_lump", chance = 8, min = 1, max = 2, },
+	{ name = "lord_ores:bronze_ingot", chance = 5, min = 1, max = 6, },
+	{ name = "lord_ores:mithril_lump", chance = 50, min = 1, max = 3, },
 }
 
 lottmobs.register_dwarf("", 20, 30, textures1, 2, 4, 5, 175, drops1)
@@ -114,13 +114,13 @@ local textures2 = {
 
 local drops2 = {
 	{ name = "default:diamond", chance = 30, min = 1, max = 2, },
-	{ name   = "default:iron_lump", chance = 3, min    = 1, max    = 7, },
-	{ name   = "default:copper_lump", chance = 4, min    = 1, max    = 4, },
-	{ name   = "default:iron_ingot", chance = 3, min    = 1, max    = 7, },
-	{ name   = "lottores:tin_lump", chance = 8, min    = 1, max    = 2, },
-	{ name   = "default:copper_lump", chance = 8, min    = 1, max    = 2, },
-	{ name   = "default:bronze_ingot", chance = 5, min    = 1, max    = 6, },
-	{ name   = "lottores:mithril_lump", chance = 50, min    = 1, max    = 3, },
+	{ name   = "lord_ores:iron_lump", chance = 3, min    = 1, max    = 7, },
+	{ name   = "lord_ores:copper_lump", chance = 4, min    = 1, max    = 4, },
+	{ name   = "lord_ores:steel_ingot", chance = 3, min    = 1, max    = 7, },
+	{ name   = "lord_ores:tin_lump", chance = 8, min    = 1, max    = 2, },
+	{ name   = "lord_ores:copper_lump", chance = 8, min    = 1, max    = 2, },
+	{ name   = "lord_ores:bronze_ingot", chance = 5, min    = 1, max    = 6, },
+	{ name   = "lord_ores:mithril_lump", chance = 50, min    = 1, max    = 3, },
 }
 
 lottmobs.register_dwarf("1", 30, 40, textures2, 2.75, 3.5, 13, 75, drops2)
@@ -161,13 +161,13 @@ local textures3 = {
 
 local drops3 = {
 	{ name = "default:diamond", chance = 30, min = 1, max = 2, },
-	{ name = "default:iron_lump", chance = 3, min = 1, max = 7, },
-	{ name = "default:copper_lump", chance = 4, min = 1, max = 4, },
-	{ name = "default:iron_ingot", chance = 3, min = 1, max = 7, },
-	{ name = "lottores:tin_lump", chance = 8, min = 1, max = 2, },
-	{ name = "default:copper_lump", chance = 8, min = 1, max = 2, },
-	{ name = "default:bronze_ingot", chance = 5, min = 1, max = 6, },
-	{ name = "lottores:mithril_lump", chance = 50, min = 1, max = 3, },
+	{ name = "lord_ores:iron_lump", chance = 3, min = 1, max = 7, },
+	{ name = "lord_ores:copper_lump", chance = 4, min = 1, max = 4, },
+	{ name = "lord_ores:steel_ingot", chance = 3, min = 1, max = 7, },
+	{ name = "lord_ores:tin_lump", chance = 8, min = 1, max = 2, },
+	{ name = "lord_ores:copper_lump", chance = 8, min = 1, max = 2, },
+	{ name = "lord_ores:bronze_ingot", chance = 5, min = 1, max = 6, },
+	{ name = "lord_ores:mithril_lump", chance = 50, min = 1, max = 3, },
 }
 
 lottmobs.register_dwarf("2", 25, 25, textures3, 2.5, 3.5, 7, 100, drops3)

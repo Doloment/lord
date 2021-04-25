@@ -62,18 +62,18 @@ minetest.register_craftitem("lottblocks:dwarf_harp_strings", {
 minetest.register_craft({
 	output = "lottblocks:dwarf_harp_strings",
 	recipe = {
-		{ "farming:string", "lottores:silver_ingot", "farming:string" },
-		{ "farming:string", "lottores:silver_ingot", "farming:string" },
-		{ "farming:string", "lottores:silver_ingot", "farming:string" }
+		{ "farming:string", "lord_ores:silver_ingot", "farming:string" },
+		{ "farming:string", "lord_ores:silver_ingot", "farming:string" },
+		{ "farming:string", "lord_ores:silver_ingot", "farming:string" }
 	}
 })
 
 minetest.register_craft({
 	output = "lottblocks:dwarf_harp",
 	recipe = {
-		{ "", "default:gold_ingot", "" },
-		{ "default:gold_ingot", "lottblocks:dwarf_harp_strings", "default:gold_ingot" },
-		{ "default:gold_ingot", "default:gold_ingot", "" }
+		{ "", "lord_ores:gold_ingot", "" },
+		{ "lord_ores:gold_ingot", "lottblocks:dwarf_harp_strings", "lord_ores:gold_ingot" },
+		{ "lord_ores:gold_ingot", "lord_ores:gold_ingot", "" }
 	}
 })
 
@@ -107,7 +107,7 @@ for _, row in ipairs(whistle) do
 		recipe = {
 			{ craftwood, "", "" },
 			{ "", craftwood, "" },
-			{ "", "", "lottores:silver_ingot" }
+			{ "", "", "lord_ores:silver_ingot" }
 		}
 	})
 end

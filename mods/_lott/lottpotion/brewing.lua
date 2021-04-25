@@ -53,7 +53,7 @@ minetest.register_craft({
 	recipe = {
 		{ 'group:wood', 'group:wood', 'group:wood' },
 		{ 'group:wood', '', 'group:wood' },
-		{ 'group:wood', 'default:steel_ingot', 'group:wood' },
+		{ 'group:wood', 'lord_ores:steel_ingot', 'group:wood' },
 	}
 })
 

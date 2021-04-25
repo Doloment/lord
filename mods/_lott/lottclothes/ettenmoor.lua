@@ -35,7 +35,7 @@ minetest.register_craft({
 	recipe = {
 		{"lottclothes:felt_grey", "", "lottclothes:felt_grey"},
 		{"lottclothes:felt_grey", "lottclothes:felt_grey", "lottclothes:felt_grey"},
-		{"lottclothes:felt_brown", "default:gold_ingot", "lottclothes:felt_brown"}
+		{"lottclothes:felt_brown", "lord_ores:gold_ingot", "lottclothes:felt_brown"}
 	}
 })
 

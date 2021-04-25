@@ -46,7 +46,7 @@ minetest.register_craft({
 	output = 'lottinventory:small',
 	recipe = {
 		{ '', 'group:stick', '' },
-		{ 'group:wool', 'default:steel_ingot', 'group:wool' },
+		{ 'group:wool', 'lord_ores:steel_ingot', 'group:wool' },
 		{ 'group:wool', 'group:wool', 'group:wool' },
 	}
 })
@@ -54,7 +54,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottinventory:medium',
 	recipe = {
-		{ 'default:steel_ingot', 'farming:string', 'default:steel_ingot' },
+		{ 'lord_ores:steel_ingot', 'farming:string', 'lord_ores:steel_ingot' },
 		{ 'lottinventory:small', 'farming:string', 'lottinventory:small' },
 	}
 })
@@ -62,7 +62,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottinventory:large',
 	recipe = {
-		{ 'default:steel_ingot', 'lottinventory:medium', 'default:steel_ingot' },
+		{ 'lord_ores:steel_ingot', 'lottinventory:medium', 'lord_ores:steel_ingot' },
 		{ 'farming:string', 'lottinventory:small', 'farming:string' },
 	}
 })
@@ -70,7 +70,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottinventory:large',
 	recipe = {
-		{ 'default:steel_ingot', 'lottinventory:small', 'default:steel_ingot' },
+		{ 'lord_ores:steel_ingot', 'lottinventory:small', 'lord_ores:steel_ingot' },
 		{ 'farming:string', 'lottinventory:medium', 'farming:string' },
 	}
 })
@@ -94,9 +94,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottinventory:protection_book',
 	recipe = {
-		{ 'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot' },
-		{ 'default:steel_ingot', 'lottinventory:crafts_book', 'default:steel_ingot' },
-		{ 'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot' },
+		{ 'lord_ores:steel_ingot', 'lord_ores:steel_ingot', 'lord_ores:steel_ingot' },
+		{ 'lord_ores:steel_ingot', 'lottinventory:crafts_book', 'lord_ores:steel_ingot' },
+		{ 'lord_ores:steel_ingot', 'lord_ores:steel_ingot', 'lord_ores:steel_ingot' },
 	}
 })
 
@@ -117,9 +117,9 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'lottinventory:forbidden_crafts_book',
 	recipe = {
-		{ 'default:gold_ingot', 'default:gold_ingot', 'default:gold_ingot' },
-		{ 'default:gold_ingot', 'lottinventory:protection_book', 'default:gold_ingot' },
-		{ 'default:gold_ingot', 'default:gold_ingot', 'default:gold_ingot' },
+		{ 'lord_ores:gold_ingot', 'lord_ores:gold_ingot', 'lord_ores:gold_ingot' },
+		{ 'lord_ores:gold_ingot', 'lottinventory:protection_book', 'lord_ores:gold_ingot' },
+		{ 'lord_ores:gold_ingot', 'lord_ores:gold_ingot', 'lord_ores:gold_ingot' },
 	}
 })
 
@@ -132,7 +132,7 @@ minetest.register_craft({
 		'lottores:tilkal_ingot',
 		'lottinventory:protection_book',
 		'lottinventory:forbidden_crafts_book',
-		'lottores:mithril_ingot',
+		'lord_ores:mithril_ingot',
 		'lottinventory:crafts_book',
 		'lottinventory:brewing_book',
 		'lottores:tilkal_ingot',

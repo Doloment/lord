@@ -15,7 +15,7 @@ minetest.register_craft({
 	output = "lottclothes:cap_chetwood",
 	recipe = {
 		{"lottclothes:felt_green", "lottclothes:felt_green", "lottclothes:felt_green"},
-		{"lottores:tin_ingot", "", "lottores:tin_ingot"},
+		{"lord_ores:tin_ingot", "", "lord_ores:tin_ingot"},
 		{"", "",""}
 	}
 })
@@ -32,8 +32,8 @@ minetest.register_craft({
 	output = "lottclothes:jacket_chetwood",
 	recipe = {
 		{"lottclothes:felt_green", "", "lottclothes:felt_green"},
-		{"lottores:tin_ingot", "lottclothes:felt_green", "lottores:tin_ingot"},
-		{"lottores:tin_ingot", "lottclothes:felt_green", "lottores:tin_ingot"}
+		{"lord_ores:tin_ingot", "lottclothes:felt_green", "lord_ores:tin_ingot"},
+		{"lord_ores:tin_ingot", "lottclothes:felt_green", "lord_ores:tin_ingot"}
 	}
 })
 
@@ -49,8 +49,8 @@ minetest.register_craft({
 	output = "lottclothes:pants_chetwood",
 	recipe = {
 		{"lottclothes:felt_green", "lottclothes:felt_green", "lottclothes:felt_green"},
-		{"lottores:tin_ingot", "" , "lottores:tin_ingot"},
-		{"lottores:tin_ingot", "" , "lottores:tin_ingot"}
+		{"lord_ores:tin_ingot", "" , "lord_ores:tin_ingot"},
+		{"lord_ores:tin_ingot", "" , "lord_ores:tin_ingot"}
 	}
 })
 
@@ -66,6 +66,6 @@ minetest.register_craft({
 	output = "lottclothes:boots_chetwood",
 	recipe = {
 		{"lottclothes:felt_brown", "", "lottclothes:felt_brown"},
-		{"lottores:tin_ingot", "", "lottores:tin_ingot"}
+		{"lord_ores:tin_ingot", "", "lord_ores:tin_ingot"}
 	}
 })

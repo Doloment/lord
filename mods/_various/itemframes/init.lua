@@ -317,7 +317,7 @@ itemframes.register_pedestal("pavement", "castle:pavement",
 		default.node_sound_stone_defaults()
 )
 
-itemframes.register_pedestal("marble", "lottores:marble",
+itemframes.register_pedestal("marble", "lord_ores:marble",
 		{cracky=3, pedestal=1},
 		{"lottores_marble.png"},
 		SL("Marble Pedestal"),

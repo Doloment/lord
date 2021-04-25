@@ -24,12 +24,6 @@ minetest.register_craftitem("lottother:ring", {
     groups = {forbidden=1},
 	stack_max = 1,
 })
-minetest.register_craftitem("lottother:purple_gem", {
-	description = SL("Purple Gem"),
-	inventory_image = "lottother_purplegem.png",
-    groups = {forbidden=1},
-})
-
 
 --ELF RINGS
 --FUNCTION = Sets your health to max every 30 seconds.
@@ -108,7 +102,7 @@ minetest.register_tool("lottother:nenya", {
 minetest.register_craft({
 	type = "shapeless",
 	output = "lottother:ringsilver_lump",
-	recipe = {"lottores:mithril_lump", "default:gold_lump", "lottores:silver_lump", "lottores:silver_lump"},
+	recipe = {"lord_ores:mithril_lump", "lord_ores:gold_lump", "lord_ores:silver_ingot", "lord_ores:silver_ingot"},
 })
 minetest.register_craft({
 	type = "cooking",
@@ -124,16 +118,11 @@ minetest.register_craft({
 	{"lottother:ringsilver_ingot", "lottother:ringsilver_ingot", "lottother:ringsilver_ingot"},
 	},
 })
-minetest.register_craft({
-	type = "shapeless",
-	output = "lottother:purple_gem",
-	recipe = {"lottores:blue_gem", "lottores:red_gem"},
-})
 
 minetest.register_craft({
 	output = "lottother:blue_gem_ring",
 	recipe = {
-	{"lottores:blue_gem"},
+	{"lord_ores:heated_blue_sapphire"},
 	{"lottother:ring"},
 	},
 })
@@ -155,7 +144,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "lottother:red_gem_ring",
 	recipe = {
-	{"lottores:red_gem"},
+	{"lord_ores:heated_red_ruby"},
 	{"lottother:ring"},
 	},
 })
@@ -177,7 +166,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "lottother:white_gem_ring",
 	recipe = {
-	{"lottores:white_gem"},
+	{"lord_ores:heated_white_diamond"},
 	{"lottother:ring"},
 	},
 })
@@ -225,16 +214,16 @@ minetest.register_tool("lottother:dwarf_ring", {
 minetest.register_craft({
 	output = "lottother:purple_gem_ring",
 	recipe = {
-	{"lottother:purple_gem"},
+	{"lord_ores:heated_violet_alexandrite"},
 	{"lottother:ring"},
 	},
 })
 minetest.register_craft({
 	output = "lottother:purple_gem_mithril_ring",
 	recipe = {
-	{"lottores:mithril_ingot", "lottores:mithril_ingot", "lottores:mithril_ingot"},
-	{"lottores:mithril_ingot", "lottother:purple_gem_ring", "lottores:mithril_ingot"},
-	{"lottores:mithril_ingot", "lottores:mithril_ingot", "lottores:mithril_ingot"},
+	{"lord_ores:mithril_ingot", "lord_ores:mithril_ingot", "lord_ores:mithril_ingot"},
+	{"lord_ores:mithril_ingot", "lottother:purple_gem_ring", "lord_ores:mithril_ingot"},
+	{"lord_ores:mithril_ingot", "lord_ores:mithril_ingot", "lord_ores:mithril_ingot"},
 	},
 })
 minetest.register_craft({
@@ -255,13 +244,13 @@ minetest.register_craft({
 local lumps = {
 	-- ["name"] = level,
 	["lottores:limestone_lump"] = 1,
-	["lottores:silver_lump"] = 3,
-	["lottores:tin_lump"] = 1,
-	["lottores:lead_lump"] = 1,
-	["default:coal_lump"] = 2,
-	["default:iron_lump"] = 2,
-	["default:copper_lump"] = 2,
-	["default:gold_lump"] = 3,
+	["lord_ores:silver_ingot"] = 3,
+	["lord_ores:tin_lump"] = 1,
+	["lord_ores:lead_lump"] = 1,
+	["lord_ores:coal_lump"] = 2,
+	["lord_ores:iron_lump"] = 2,
+	["lord_ores:copper_lump"] = 2,
+	["lord_ores:gold_lump"] = 3,
 	["lottores:rough_rock_lump"] = 1,
 }
 

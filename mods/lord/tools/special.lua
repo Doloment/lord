@@ -31,17 +31,17 @@ minetest.register_tool("tools:sword_orc", {
 minetest.register_craft({
 	output = 'tools:sword_elven',
 	recipe = {
-		{'', 'default:steel_ingot', ''},
-		{'default:bronze_ingot', 'default:steel_ingot', 'default:bronze_ingot'},
-		{'default:mese_crystal', 'group:stick', 'default:mese_crystal'},
+		{'', 'lord_ores:steel_ingot', ''},
+		{'lord_ores:bronze_ingot', 'lord_ores:steel_ingot', 'lord_ores:bronze_ingot'},
+		{'lord_ores:mese_crystal', 'group:stick', 'lord_ores:mese_crystal'},
 	}
 })
 
 minetest.register_craft({
 	output = 'tools:sword_orc',
 	recipe = {
-		{'', 'default:steel_ingot', 'default:steel_ingot'},
-		{'', 'default:steel_ingot', ''},
+		{'', 'lord_ores:steel_ingot', 'lord_ores:steel_ingot'},
+		{'', 'lord_ores:steel_ingot', ''},
 		{'', 'group:stick', ''},
 	}
 })

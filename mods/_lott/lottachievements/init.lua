@@ -51,9 +51,9 @@ minetest.register_craftitem("lottachievements:achievement_book", {
 minetest.register_craft({
 	output = 'lottachievements:achievement_book',
 	recipe = {
-		{ 'lottores:blue_gem', 'lottores:tilkal_ingot', 'lottother:purple_gem' },
-		{ 'default:mese_crystal', 'default:book', 'default:diamond' },
-		{ 'lottores:white_gem', 'lottother:ringsilver_ingot', 'lottores:red_gem' },
+		{ 'lord_ores:heated_blue_sapphire', 'lottores:tilkal_ingot', 'lord_ores:heated_violet_alexandrite' },
+		{ 'lord_ores:mese_crystal', 'default:book', 'default:diamond' },
+		{ 'lord_ores:heated_white_diamond', 'lottother:ringsilver_ingot', 'lord_ores:heated_red_ruby' },
 	}
 })
 -- Different achievements
@@ -494,7 +494,7 @@ lottachievements.register_achievement("first_truesilver", {
 	id          = 37,
 	trigger     = {
 		type   = "dig",
-		node   = "lottores:mithril_ore",
+		node   = "lord_ores:mithril_ore",
 		target = 1
 	}
 })
@@ -507,7 +507,7 @@ lottachievements.register_achievement("dwarvern_miner", {
 	id          = 38,
 	trigger     = {
 		type   = "dig",
-		node   = "lottores:mithril_ore",
+		node   = "lord_ores:mithril_ore",
 		target = 99
 	}
 })
@@ -520,7 +520,7 @@ lottachievements.register_achievement("ammassing_fortune", {
 	id          = 39,
 	trigger     = {
 		type   = "dig",
-		node   = "lottores:mithril_ore",
+		node   = "lord_ores:mithril_ore",
 		target = 500
 	}
 })
@@ -533,7 +533,7 @@ lottachievements.register_achievement("truly_rich", {
 	id          = 40,
 	trigger     = {
 		type   = "dig",
-		node   = "lottores:mithril_ore",
+		node   = "lord_ores:mithril_ore",
 		target = 1000
 	}
 })
@@ -546,7 +546,7 @@ lottachievements.register_achievement("lord_of_moria", {
 	id          = 41,
 	trigger     = {
 		type   = "dig",
-		node   = "lottores:mithril_ore",
+		node   = "lord_ores:mithril_ore",
 		target = 5000
 	}
 })

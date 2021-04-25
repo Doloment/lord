@@ -794,7 +794,7 @@ my_register_stair_and_slab(
 
 my_register_stair_and_slab(
 	"steelblock",
-	"default:steelblock",
+	"lord_ores:steel_block",
 	{cracky = 1, level = 2},
 	{"default_steel_block.png"},
 	"Steel Block Stair",
@@ -816,7 +816,7 @@ my_register_stair_and_slab(
 
 my_register_stair_and_slab(
 	"copperblock",
-	"default:copperblock",
+	"lord_ores:copper_block",
 	{cracky = 1, level = 2},
 	{"default_copper_block.png"},
 	"Copper Block Stair",
@@ -827,7 +827,7 @@ my_register_stair_and_slab(
 
 my_register_stair_and_slab(
 	"bronzeblock",
-	"default:bronzeblock",
+	"lord_ores:bronze_block",
 	{cracky = 1, level = 2},
 	{"default_bronze_block.png"},
 	"Bronze Block Stair",
@@ -838,7 +838,7 @@ my_register_stair_and_slab(
 
 my_register_stair_and_slab(
 	"goldblock",
-	"default:goldblock",
+	"lord_ores:gold_block",
 	{cracky = 1},
 	{"default_gold_block.png"},
 	"Gold Block Stair",

@@ -50,6 +50,6 @@ minetest.register_craft({
 	output = "lottclothes:shoes_brandybuck",
 	recipe = {
 		{"lottclothes:flax_blue", "", "lottclothes:flax_blue"},
-		{"default:copper_ingot", "", "default:copper_ingot"}
+		{"lord_ores:copper_ingot", "", "lord_ores:copper_ingot"}
 	}
 })

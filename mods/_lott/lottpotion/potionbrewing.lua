@@ -101,8 +101,8 @@ minetest.register_node("lottpotion:glass_bottle_mordor", {
 minetest.register_craft({
 	output = 'lottpotion:potion_brewer',
 	recipe = {
-		{ 'default:steel_ingot', 'default:steel_ingot', 'default:steel_ingot' },
-		{ '', 'default:steel_ingot', '' },
+		{ 'lord_ores:steel_ingot', 'lord_ores:steel_ingot', 'lord_ores:steel_ingot' },
+		{ '', 'lord_ores:steel_ingot', '' },
 		{ 'group:stone', 'group:stone', 'group:stone' },
 	}
 })
@@ -203,7 +203,7 @@ end
 local recipes = {
 	--Base Potion
 	{ "lottplants:seregon", "lottpotion:glass_bottle_water", "lottpotion:glass_bottle_seregon" },
-	{ "default:mese_crystal_fragment 1", "lottpotion:glass_bottle_water", "lottpotion:glass_bottle_mese" },
+	{ "lord_ores:mese_shard 1", "lottpotion:glass_bottle_water", "lottpotion:glass_bottle_mese" },
 	{ "lottores:geodes_crystal_1", "lottpotion:glass_bottle_water", "lottpotion:glass_bottle_geodes" },
 	--Potions
 	--Orc Draught

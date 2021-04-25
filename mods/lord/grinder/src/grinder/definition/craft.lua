@@ -5,16 +5,16 @@ return {
 		{
 			output = 'grinder:roll',
 			recipe = {
-				{'default:steel_ingot', 'default:diamond', 'default:steel_ingot'},
-				{'carts:gear', 'default:steel_ingot', 'carts:gear'},
-				{'default:diamond', 'default:steel_ingot', 'default:diamond'},
+				{'lord_ores:steel_ingot', 'default:diamond', 'lord_ores:steel_ingot'},
+				{'carts:gear', 'lord_ores:steel_ingot', 'carts:gear'},
+				{'default:diamond', 'lord_ores:steel_ingot', 'default:diamond'},
 			}
 		},
 		{
 			output = 'grinder:grinder',
 			recipe = {
 				{'grinder:roll', '', 'grinder:roll'},
-				{'default:steel_ingot', 'carts:gear', 'default:steel_ingot'},
+				{'lord_ores:steel_ingot', 'carts:gear', 'lord_ores:steel_ingot'},
 				{'default:obsidian', 'carts:steam_mechanism', 'default:obsidian'},
 			}
 		},

@@ -1,7 +1,7 @@
 minetest.register_craft({
 	output = "lord_homedecor:bars 6",
 	recipe = {
-		{ "default:steel_ingot","default:steel_ingot","default:steel_ingot" },
+		{ "lord_ores:steel_ingot","lord_ores:steel_ingot","lord_ores:steel_ingot" },
 		{ "lord_homedecor:pole_wrought_iron","lord_homedecor:pole_wrought_iron","lord_homedecor:pole_wrought_iron" },
 	},
 })
@@ -17,7 +17,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = "lord_homedecor:torch_wall 10",
 	recipe = {
-		{ "default:coal_lump" },
-		{ "default:steel_ingot" },
+		{ "lord_ores:coal_lump" },
+		{ "lord_ores:steel_ingot" },
 	},
 })

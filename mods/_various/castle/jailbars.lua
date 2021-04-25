@@ -112,8 +112,8 @@ minetest.register_on_dignode(update_nearby)
 minetest.register_craft({
 	output = "castle:jailbars 12",
 	recipe = {
-		{ "default:steel_ingot", "", "default:steel_ingot" },
-		{ "default:steel_ingot", "default:steel_ingot", "default:steel_ingot" },
-		{ "default:steel_ingot", "", "default:steel_ingot" },
+		{ "lord_ores:steel_ingot", "", "lord_ores:steel_ingot" },
+		{ "lord_ores:steel_ingot", "lord_ores:steel_ingot", "lord_ores:steel_ingot" },
+		{ "lord_ores:steel_ingot", "", "lord_ores:steel_ingot" },
 	}
 })

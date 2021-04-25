@@ -68,13 +68,13 @@ minetest.register_craft({
 minetest.register_craft({
 	type = "shapeless",
 	output = "castle:oak_door_lock",
-	recipe = {"castle:oak_door", "default:steel_ingot"}
+	recipe = {"castle:oak_door", "lord_ores:steel_ingot"}
 })
 
 minetest.register_craft({
 	type = "shapeless",
 	output = "castle:jail_door_lock",
-	recipe = {"castle:jail_door", "default:steel_ingot"}
+	recipe = {"castle:jail_door", "lord_ores:steel_ingot"}
 })
 
 -- luacheck: globals default
@@ -205,8 +205,8 @@ minetest.register_node("castle:ironbound_chest",{
 minetest.register_craft({
 	output = "castle:ironbound_chest",
 	recipe = {
-		{"default:wood", "default:steel_ingot","default:wood"},
-		{"default:wood", "default:steel_ingot","default:wood"}
+		{"default:wood", "lord_ores:steel_ingot","default:wood"},
+		{"default:wood", "lord_ores:steel_ingot","default:wood"}
 	}
 })
 
@@ -227,8 +227,8 @@ minetest.register_tool("castle:battleaxe", {
 minetest.register_craft({
 	output = "castle:battleaxe",
 	recipe = {
-		{"default:steel_ingot", "default:mese_crystal","default:steel_ingot"},
-		{"default:steel_ingot", "group:stick","default:steel_ingot"},
+		{"lord_ores:steel_ingot", "lord_ores:mese_crystal","lord_ores:steel_ingot"},
+		{"lord_ores:steel_ingot", "group:stick","lord_ores:steel_ingot"},
                   {"", "group:stick",""}
 	}
 })
