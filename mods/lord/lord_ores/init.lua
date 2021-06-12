@@ -3,10 +3,7 @@ local SL = lord.require_intllib()
 lord_ores = {}
 
 function lord_ores.register_materials(specs)
-    local block_sounds = default.node_sound_metal_defaults()
-
     local ore_drop
-    local block_drop
 
     local ore_name
     local lump_name
@@ -33,7 +30,7 @@ function lord_ores.register_materials(specs)
         else
             ore_name = "lord_ores:"..specs.name.."_ore"
         end
-        
+
         if specs.custom_lump_name ~= nil then
             lump_name = specs.custom_lump_name
         else
@@ -45,7 +42,7 @@ function lord_ores.register_materials(specs)
         else
             ingot_name = "lord_ores:"..specs.name.."_ingot"
         end
-        
+
         if specs.custom_block_name ~= nil then
             block_name = specs.custom_block_name
         else
@@ -60,7 +57,7 @@ function lord_ores.register_materials(specs)
         else
             ore_desc = SL(specs.description.." Ore")
         end
-        
+
         if specs.custom_lump_desc ~= nil then
             lump_desc = specs.custom_lump_desc
         else
@@ -72,7 +69,7 @@ function lord_ores.register_materials(specs)
         else
             ingot_desc = SL(specs.description.." Ingot")
         end
-        
+
         if specs.custom_block_desc ~= nil then
             block_desc = specs.custom_block_desc
         else
@@ -87,7 +84,7 @@ function lord_ores.register_materials(specs)
         else
             ore_img = nil
         end
-        
+
         if specs.custom_lump_img ~= nil then
             lump_img = specs.custom_lump_img
         else
@@ -99,7 +96,7 @@ function lord_ores.register_materials(specs)
         else
             ingot_img = "lord_ores_"..specs.name.."_ingot.png"
         end
-        
+
         if specs.custom_block_img ~= nil then
             block_img = specs.custom_block_img
         else
@@ -114,7 +111,7 @@ function lord_ores.register_materials(specs)
         else
             ore_sounds = default.node_sound_stone_defaults()
         end
-        
+
         if specs.custom_block_sounds ~= nil then
             block_sounds = specs.custom_block_sounds
         else
@@ -142,7 +139,7 @@ function lord_ores.register_materials(specs)
 
     --Ore Registration
     if specs.register_ore ~= false then
-        if specs.register_lump ~= false then 
+        if specs.register_lump ~= false then
             ore_drop = lump_name
         else
             ore_drop = ore_name
@@ -173,8 +170,6 @@ function lord_ores.register_materials(specs)
 			on_blast = specs.ore_on_blast,
         })
 
-        --minetest.log("Register ore "..ore_name.." = "..specs.ore["type"].." - "..specs.ore["scarity"].." - "..specs.ore["ymax"].." - "..specs.ore["ymin"])
-
         minetest.register_ore({
             ore_type       = specs.ore["type"] or "scatter",
             ore            = ore_name,
@@ -186,7 +181,7 @@ function lord_ores.register_materials(specs)
             y_max     = specs.ore["ymax"] or 0,
             noise_params = specs.ore["noise"],
         })
-        
+
         if specs.ore2 ~= nil then
             minetest.register_ore({
                 ore_type       = specs.ore2["type"] or "scatter",
@@ -264,7 +259,7 @@ function lord_ores.register_materials(specs)
 
         minetest.register_node(block_name, {
             description = block_desc,
-            tiles = specs.tiles or {"default_stone.png^lord_ores_"..specs.name.."_block.png"},
+            tiles = specs.block_tiles or {"default_stone.png^lord_ores_"..specs.name.."_block.png"},
             inventory_image = block_img,
 			wield_image = block_img,
             groups = specs.block_groups or {cracky = 1},
@@ -295,7 +290,7 @@ function lord_ores.register_materials(specs)
 						{block_name},
 					}
 				})
-	
+
 				minetest.register_craft({
 					output = block_name,
 					recipe = {
@@ -330,7 +325,7 @@ function lord_ores.register_materials(specs)
 						{block_name},
 					}
 				})
-	
+
 				minetest.register_craft({
 					output = block_name,
 					recipe = {

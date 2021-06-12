@@ -119,9 +119,11 @@ lord_ores.register_materials({
     name = "iron",
     description = "Iron",
     custom_block_name = "lord_ores:steel_block",
-    custom_block_description = SL("Steel Block"),
+    custom_block_desc = SL("Steel Block"),
     custom_ingot_name = "lord_ores:steel_ingot",
-    custom_ingot_description = SL("Steel Ingot"),
+    custom_ingot_desc = SL("Steel Ingot"),
+    custom_ingot_img = "lord_ores_steel_ingot.png",
+    block_tiles = {"lord_ores_steel_block.png"},
     ore = {
         scarity = 18*18*18,
         num = 3,
@@ -447,7 +449,7 @@ lord_ores.register_materials({
     custom_lump_img = "lord_ores_unheated_red_ruby.png",
     custom_ingot_name = "lord_ores:heated_red_ruby",
     custom_ingot_desc = SL("Heated Red Ruby"),
-    custom_lump_img = "lord_ores_heated_red_ruby.png",
+    custom_ingot_img = "lord_ores_heated_red_ruby.png",
     ore_groups = {mineral = 1, magical = 1},
     ore_drop = {
 		items = {
