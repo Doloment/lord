@@ -366,4 +366,19 @@ end
 dofile(minetest.get_modpath(minetest.get_current_modname()) .. "/registrations.lua")
 dofile(minetest.get_modpath(minetest.get_current_modname()) .. "/cave_flower.lua")
 
+--minetest.find_node_near(pos, 128, {"adventuring:lamaris"})
+
+minetest.register_chatcommand("find", {
+	params = "<nodename>",
+	description = "find_node",
+	func = function(name, nodename)
+		local player = minetest.get_player_by_name(name)
+		if not player then
+			return false, "Player not found"
+		end
+        local pos = minetest.find_node_near(player:get_pos(), 128, {nodename}) or {x = 0, y = 0, z = 0}
+		minetest.chat_send_all(pos.x.." "..pos.y.." "..pos.z)
+	end,
+})
+
 lord.mod_loaded()
