@@ -10,24 +10,14 @@ shop.formspec = {
 		"listcolors[#606060AA;#888;#141318;#30434C;#FFF]"..
 
 		"label[0,-0.35;"..SL("Owner gives").."]"..
-		"list["..list_name..";owner_gives;0,0.1;2,2;]"..
+		"list["..list_name..";owner_gives;0,0.1;8,2;]"..
 
 		"label[0,1.95;"..SL("Owner wants").."]"..
-		"list["..list_name..";owner_wants;0,2.4;2,2;]"..
+		"list["..list_name..";owner_wants;0,2.4;8,2;]"..
 
-		"label[3,-0.35;"..SL("Customer gives (pay here !)").."]"..
-		"list[current_player;customer_gives;3,0.1;5,2;]"..
-
-		"label[3,1.95;"..SL("Customer gets").."]"..
-		"list[current_player;customer_gets;3,2.4;5,2;]"..
-
-		"button[0,4.35;8,1;exchange;"..SL("Exchange").."]"..
-		"list[current_player;main;0,5.3;8,4;]"..
-
-		"listring[current_player;customer_gets]"..
-		"listring[current_player;main]"..
-		"listring[current_player;customer_gives]"..
-		"listring[current_player;main]"
+		"button[0,4.35;4,1;exchange;"..SL("Exchange").."]"..
+		"button[4,4.35;4,1;exchange_all;"..SL("Exchange All").."]"..
+		"list[current_player;main;0,5.3;8,4;]"
 
 		return formspec
 	end,
@@ -38,16 +28,46 @@ shop.formspec = {
 		"listcolors[#606060AA;#888;#141318;#30434C;#FFF]"..
 
 		"label[0,-0.35;"..SL("In exchange, you give:").."]"..
-		"list["..list_name..";owner_gives;0,0.1;2,2;]"..
+		"list["..list_name..";owner_gives;0,0.1;8,2;]"..
 
 		"label[0,1.95;"..SL("You want:").."]"..
-		"list["..list_name..";owner_wants;0,2.4;2,2;]"..
+		"list["..list_name..";owner_wants;0,2.4;8,2;]"..
+
+		--[["label[3,-0.35;"..SL("Your stock:").."]"..
+		"list["..list_name..";stock;3,0.1;5,2;]"..]]
+
+		"button[5,4.35;3,1;storage;"..SL("Show Storage").."]"..
+
+		"label[0,4.35;"..SL("Owner, Use(E)+Place(RMB) for customer interface").."]"..
+		"list[current_player;main;0,5.3;8,4;]"..
+
+		"listring["..list_name..";owner_gives]"..
+		"listring[current_player;main]"..
+		"listring["..list_name..";stock]"..
+		"listring[current_player;main]"..
+		"listring["..list_name..";owner_wants]"..
+		"listring[current_player;main]"..
+		"listring["..list_name..";customers_gave]"..
+		"listring[current_player;main]"
+
+		return formspec
+	end,
+	owner_storage = function(pos)
+		local list_name = "nodemeta:"..pos.x..","..pos.y..","..pos.z
+		local formspec = "size[8,9]"..
+		"background[-0.5,-0.65;9,10.35;gui_chestbg.png]"..
+		"listcolors[#606060AA;#888;#141318;#30434C;#FFF]"..
+
+		"label[0,-0.35;"..SL("In exchange, you give:").."]"..
+		"list["..list_name..";owner_gives;0,0.1;8,2;]"..
+
+		"label[0,1.95;"..SL("You want:").."]"..
+		"list["..list_name..";owner_wants;0,2.4;8,2;]"..
 
 		"label[3,-0.35;"..SL("Your stock:").."]"..
 		"list["..list_name..";stock;3,0.1;5,2;]"..
 
-		"label[3,1.95;"..SL("Customers gave:").."]"..
-		"list["..list_name..";customers_gave;3,2.4;5,2;]"..
+		"button[X,Y;W,H;back;label]"..
 
 		"label[0,4.35;"..SL("Owner, Use(E)+Place(RMB) for customer interface").."]"..
 		"list[current_player;main;0,5.3;8,4;]"..
@@ -88,8 +108,8 @@ minetest.register_node("lord_money:shop", {
 		local inv = meta:get_inventory()
 		inv:set_size("customers_gave", 5*2)
 		inv:set_size("stock", 5*2)
-		inv:set_size("owner_wants", 2*2)
-		inv:set_size("owner_gives", 2*2)
+		inv:set_size("owner_wants", 8*2)
+		inv:set_size("owner_gives", 8*2)
 	end,
 	on_rightclick = function(pos, node, clicker, itemstack)
 		clicker:get_inventory():set_size("customer_gives", 5*2)
@@ -128,6 +148,11 @@ minetest.register_node("lord_money:shop", {
 			inv:is_empty("customers_gave") and
 			inv:is_empty("owner_wants") and
 			inv:is_empty("owner_gives")
+	end,
+	on_receive_fields = function(pos, formname, fields, sender)
+		if formname == "lord_money:shop_formspec" and fields.storage then
+			minetest.show_formspec(sender:get_player_name(), "lord_money:shop_storage", shop.formspec.owner_storage(pos))
+		end
 	end
 })
 
